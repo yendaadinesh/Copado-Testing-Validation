@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CTE</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CTEs</value>
+    </caseValues>
+    <fields>
+        <help><!-- Clinical Trial Educator ID --></help>
+        <label><!-- CTE ID --></label>
+        <name>CTE_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clinical Trial Profile --></label>
+        <name>Clinical_Trial_Profile__c</name>
+        <relationshipLabel><!-- CTEs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Comments --></help>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Holds the HCP ID for when a CTE made face-to-face contact with an HCP and date of when the contact was made --></help>
+        <label><!-- F2F Contact Date --></label>
+        <name>F2F_Contact_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Clinical Trial Educator First and Last Name --></help>
+        <label><!-- First and Last Name --></label>
+        <name>First_and_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- HCP --></label>
+        <name>HCP__c</name>
+        <relationshipLabel><!-- CTEs (HCP) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Description of HCP outreach --></help>
+        <label><!-- HCP Outreach Status --></label>
+        <name>HCP_outreach_Status__c</name>
+        <picklistValues>
+            <masterLabel>Agreed to Refer</masterLabel>
+            <translation><!-- Agreed to Refer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Responsive</masterLabel>
+            <translation><!-- Non Responsive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Yet Contacted</masterLabel>
+            <translation><!-- Not Yet Contacted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open Lead</masterLabel>
+            <translation><!-- Open Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm Lead</masterLabel>
+            <translation><!-- Warm Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Will not Refer</masterLabel>
+            <translation><!-- Will not Refer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PI --></label>
+        <name>PI__c</name>
+        <relationshipLabel><!-- CTEs (PI) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Study Site --></label>
+        <name>Study_Site__c</name>
+        <relationshipLabel><!-- CTEs --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

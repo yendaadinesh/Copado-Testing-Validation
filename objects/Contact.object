@@ -1,0 +1,2462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Merge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewContact</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override updated by Lightning App Builder during activation.</comment>
+        <content>HCP_and_PI_Contacts</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>HCP_and_PI</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>HCP_and_PI</fullName>
+        <fields>Name</fields>
+        <fields>Override_Phone__c</fields>
+        <fields>Override_Email__c</fields>
+        <fields>Contact_Method_Preference__c</fields>
+        <label>HCP and PI</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Accepts_Reimbursement_for_Referral__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Will accept reimbursement for referrals?</inlineHelpText>
+        <label>Accepts Reimbursement for Referral</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Y_N_Unknown</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Accepts_Reimbursements_for_Referrals__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>will accept reimbursement for referrals</inlineHelpText>
+        <label>Accepts Reimbursements for Referrals</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Acknowledgement_ID__c</fullName>
+        <description>Temporary ID until a OneKey ID gets assigned</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Acknowledgement ID</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Affiliation__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>HCP Affiliations: Classification of the physician&apos;s affiliate organization (hospital, outpatient, academic, etc)</inlineHelpText>
+        <label>Affiliation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Retail Pharmacy</fullName>
+                    <default>false</default>
+                    <label>Retail Pharmacy</label>
+                </value>
+                <value>
+                    <fullName>Compounding</fullName>
+                    <default>false</default>
+                    <label>Compounding</label>
+                </value>
+                <value>
+                    <fullName>Clinic</fullName>
+                    <default>false</default>
+                    <label>Clinic</label>
+                </value>
+                <value>
+                    <fullName>Health Department</fullName>
+                    <default>false</default>
+                    <label>Health Department</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Osteopathic Medical School</fullName>
+                    <default>false</default>
+                    <label>Osteopathic Medical School</label>
+                </value>
+                <value>
+                    <fullName>Distributor - Corporate Headquarters</fullName>
+                    <default>false</default>
+                    <label>Distributor - Corporate Headquarters</label>
+                </value>
+                <value>
+                    <fullName>Home Health</fullName>
+                    <default>false</default>
+                    <label>Home Health</label>
+                </value>
+                <value>
+                    <fullName>Nursing Homes</fullName>
+                    <default>false</default>
+                    <label>Nursing Homes</label>
+                </value>
+                <value>
+                    <fullName>Residential Facilities</fullName>
+                    <default>false</default>
+                    <label>Residential Facilities</label>
+                </value>
+                <value>
+                    <fullName>Assisted Living</fullName>
+                    <default>false</default>
+                    <label>Assisted Living</label>
+                </value>
+                <value>
+                    <fullName>Central Fill</fullName>
+                    <default>false</default>
+                    <label>Central Fill</label>
+                </value>
+                <value>
+                    <fullName>Independent Living</fullName>
+                    <default>false</default>
+                    <label>Independent Living</label>
+                </value>
+                <value>
+                    <fullName>Distributor</fullName>
+                    <default>false</default>
+                    <label>Distributor</label>
+                </value>
+                <value>
+                    <fullName>Software Vendor</fullName>
+                    <default>false</default>
+                    <label>Software Vendor</label>
+                </value>
+                <value>
+                    <fullName>Physical Medicine and Rehabilitation</fullName>
+                    <default>false</default>
+                    <label>Physical Medicine and Rehabilitation</label>
+                </value>
+                <value>
+                    <fullName>Psychiatric Hospital</fullName>
+                    <default>false</default>
+                    <label>Psychiatric Hospital</label>
+                </value>
+                <value>
+                    <fullName>Clinical Laboratory</fullName>
+                    <default>false</default>
+                    <label>Clinical Laboratory</label>
+                </value>
+                <value>
+                    <fullName>Outpatient Pharmacy</fullName>
+                    <default>false</default>
+                    <label>Outpatient Pharmacy</label>
+                </value>
+                <value>
+                    <fullName>Alternative Medicine</fullName>
+                    <default>false</default>
+                    <label>Alternative Medicine</label>
+                </value>
+                <value>
+                    <fullName>Adult Day Care</fullName>
+                    <default>false</default>
+                    <label>Adult Day Care</label>
+                </value>
+                <value>
+                    <fullName>Managed Care</fullName>
+                    <default>false</default>
+                    <label>Managed Care</label>
+                </value>
+                <value>
+                    <fullName>Employee Assistance Programs</fullName>
+                    <default>false</default>
+                    <label>Employee Assistance Programs</label>
+                </value>
+                <value>
+                    <fullName>Non-health Delivery</fullName>
+                    <default>false</default>
+                    <label>Non-health Delivery</label>
+                </value>
+                <value>
+                    <fullName>Blood Bank</fullName>
+                    <default>false</default>
+                    <label>Blood Bank</label>
+                </value>
+                <value>
+                    <fullName>Research Institute</fullName>
+                    <default>false</default>
+                    <label>Research Institute</label>
+                </value>
+                <value>
+                    <fullName>City/County/State</fullName>
+                    <default>false</default>
+                    <label>City/County/State</label>
+                </value>
+                <value>
+                    <fullName>Mail Service</fullName>
+                    <default>false</default>
+                    <label>Mail Service</label>
+                </value>
+                <value>
+                    <fullName>Executive Health Program</fullName>
+                    <default>false</default>
+                    <label>Executive Health Program</label>
+                </value>
+                <value>
+                    <fullName>Medical Bank</fullName>
+                    <default>false</default>
+                    <label>Medical Bank</label>
+                </value>
+                <value>
+                    <fullName>Acute Care Hospital</fullName>
+                    <default>false</default>
+                    <label>Acute Care Hospital</label>
+                </value>
+                <value>
+                    <fullName>Research Laboratory</fullName>
+                    <default>false</default>
+                    <label>Research Laboratory</label>
+                </value>
+                <value>
+                    <fullName>Nuclear</fullName>
+                    <default>false</default>
+                    <label>Nuclear</label>
+                </value>
+                <value>
+                    <fullName>Federal</fullName>
+                    <default>false</default>
+                    <label>Federal</label>
+                </value>
+                <value>
+                    <fullName>Medical School</fullName>
+                    <default>false</default>
+                    <label>Medical School</label>
+                </value>
+                <value>
+                    <fullName>Rehabilitation Hospital</fullName>
+                    <default>false</default>
+                    <label>Rehabilitation Hospital</label>
+                </value>
+                <value>
+                    <fullName>Reference Laboratory</fullName>
+                    <default>false</default>
+                    <label>Reference Laboratory</label>
+                </value>
+                <value>
+                    <fullName>Pharmacy Benefit Manager</fullName>
+                    <default>false</default>
+                    <label>Pharmacy Benefit Manager</label>
+                </value>
+                <value>
+                    <fullName>Independent Physician Practice</fullName>
+                    <default>false</default>
+                    <label>Independent Physician Practice</label>
+                </value>
+                <value>
+                    <fullName>Closed-door</fullName>
+                    <default>false</default>
+                    <label>Closed-door</label>
+                </value>
+                <value>
+                    <fullName>Internet</fullName>
+                    <default>false</default>
+                    <label>Internet</label>
+                </value>
+                <value>
+                    <fullName>Other Laboratory</fullName>
+                    <default>false</default>
+                    <label>Other Laboratory</label>
+                </value>
+                <value>
+                    <fullName>Rescue</fullName>
+                    <default>false</default>
+                    <label>Rescue</label>
+                </value>
+                <value>
+                    <fullName>Warehouse</fullName>
+                    <default>false</default>
+                    <label>Warehouse</label>
+                </value>
+                <value>
+                    <fullName>Medical Group</fullName>
+                    <default>false</default>
+                    <label>Medical Group</label>
+                </value>
+                <value>
+                    <fullName>Imaging Center</fullName>
+                    <default>false</default>
+                    <label>Imaging Center</label>
+                </value>
+                <value>
+                    <fullName>Outpatient Surgi Center</fullName>
+                    <default>false</default>
+                    <label>Outpatient Surgi Center</label>
+                </value>
+                <value>
+                    <fullName>Hospital/Clinic</fullName>
+                    <default>false</default>
+                    <label>Hospital/Clinic</label>
+                </value>
+                <value>
+                    <fullName>Ambulance</fullName>
+                    <default>false</default>
+                    <label>Ambulance</label>
+                </value>
+                <value>
+                    <fullName>Manufacturer</fullName>
+                    <default>false</default>
+                    <label>Manufacturer</label>
+                </value>
+                <value>
+                    <fullName>Durable Medical Equipment</fullName>
+                    <default>false</default>
+                    <label>Durable Medical Equipment</label>
+                </value>
+                <value>
+                    <fullName>Other Insurance</fullName>
+                    <default>false</default>
+                    <label>Other Insurance</label>
+                </value>
+                <value>
+                    <fullName>Academic</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Academic</label>
+                </value>
+                <value>
+                    <fullName>Hospital</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Hospital</label>
+                </value>
+                <value>
+                    <fullName>Outpatient</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Outpatient</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Affiliation_to_Organization__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>HCP Affiliations: Classification of the physician&apos;s affiliate organization (hospital, outpatient, academic, etc)</inlineHelpText>
+        <label>Facility Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Retail Pharmacy</fullName>
+                    <default>false</default>
+                    <label>Retail Pharmacy</label>
+                </value>
+                <value>
+                    <fullName>Compounding</fullName>
+                    <default>false</default>
+                    <label>Compounding</label>
+                </value>
+                <value>
+                    <fullName>Clinic</fullName>
+                    <default>false</default>
+                    <label>Clinic</label>
+                </value>
+                <value>
+                    <fullName>Health Department</fullName>
+                    <default>false</default>
+                    <label>Health Department</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Osteopathic Medical School</fullName>
+                    <default>false</default>
+                    <label>Osteopathic Medical School</label>
+                </value>
+                <value>
+                    <fullName>Distributor - Corporate Headquarters</fullName>
+                    <default>false</default>
+                    <label>Distributor - Corporate Headquarters</label>
+                </value>
+                <value>
+                    <fullName>Home Health</fullName>
+                    <default>false</default>
+                    <label>Home Health</label>
+                </value>
+                <value>
+                    <fullName>Nursing Homes</fullName>
+                    <default>false</default>
+                    <label>Nursing Homes</label>
+                </value>
+                <value>
+                    <fullName>Residential Facilities</fullName>
+                    <default>false</default>
+                    <label>Residential Facilities</label>
+                </value>
+                <value>
+                    <fullName>Assisted Living</fullName>
+                    <default>false</default>
+                    <label>Assisted Living</label>
+                </value>
+                <value>
+                    <fullName>Central Fill</fullName>
+                    <default>false</default>
+                    <label>Central Fill</label>
+                </value>
+                <value>
+                    <fullName>Independent Living</fullName>
+                    <default>false</default>
+                    <label>Independent Living</label>
+                </value>
+                <value>
+                    <fullName>Distributor</fullName>
+                    <default>false</default>
+                    <label>Distributor</label>
+                </value>
+                <value>
+                    <fullName>Software Vendor</fullName>
+                    <default>false</default>
+                    <label>Software Vendor</label>
+                </value>
+                <value>
+                    <fullName>Physical Medicine and Rehabilitation</fullName>
+                    <default>false</default>
+                    <label>Physical Medicine and Rehabilitation</label>
+                </value>
+                <value>
+                    <fullName>Psychiatric Hospital</fullName>
+                    <default>false</default>
+                    <label>Psychiatric Hospital</label>
+                </value>
+                <value>
+                    <fullName>Clinical Laboratory</fullName>
+                    <default>false</default>
+                    <label>Clinical Laboratory</label>
+                </value>
+                <value>
+                    <fullName>Outpatient Pharmacy</fullName>
+                    <default>false</default>
+                    <label>Outpatient Pharmacy</label>
+                </value>
+                <value>
+                    <fullName>Alternative Medicine</fullName>
+                    <default>false</default>
+                    <label>Alternative Medicine</label>
+                </value>
+                <value>
+                    <fullName>Adult Day Care</fullName>
+                    <default>false</default>
+                    <label>Adult Day Care</label>
+                </value>
+                <value>
+                    <fullName>Managed Care</fullName>
+                    <default>false</default>
+                    <label>Managed Care</label>
+                </value>
+                <value>
+                    <fullName>Employee Assistance Programs</fullName>
+                    <default>false</default>
+                    <label>Employee Assistance Programs</label>
+                </value>
+                <value>
+                    <fullName>Non-health Delivery</fullName>
+                    <default>false</default>
+                    <label>Non-health Delivery</label>
+                </value>
+                <value>
+                    <fullName>Blood Bank</fullName>
+                    <default>false</default>
+                    <label>Blood Bank</label>
+                </value>
+                <value>
+                    <fullName>Research Institute</fullName>
+                    <default>false</default>
+                    <label>Research Institute</label>
+                </value>
+                <value>
+                    <fullName>City/County/State</fullName>
+                    <default>false</default>
+                    <label>City/County/State</label>
+                </value>
+                <value>
+                    <fullName>Mail Service</fullName>
+                    <default>false</default>
+                    <label>Mail Service</label>
+                </value>
+                <value>
+                    <fullName>Executive Health Program</fullName>
+                    <default>false</default>
+                    <label>Executive Health Program</label>
+                </value>
+                <value>
+                    <fullName>Medical Bank</fullName>
+                    <default>false</default>
+                    <label>Medical Bank</label>
+                </value>
+                <value>
+                    <fullName>Acute Care Hospital</fullName>
+                    <default>false</default>
+                    <label>Acute Care Hospital</label>
+                </value>
+                <value>
+                    <fullName>Research Laboratory</fullName>
+                    <default>false</default>
+                    <label>Research Laboratory</label>
+                </value>
+                <value>
+                    <fullName>Nuclear</fullName>
+                    <default>false</default>
+                    <label>Nuclear</label>
+                </value>
+                <value>
+                    <fullName>Federal</fullName>
+                    <default>false</default>
+                    <label>Federal</label>
+                </value>
+                <value>
+                    <fullName>Medical School</fullName>
+                    <default>false</default>
+                    <label>Medical School</label>
+                </value>
+                <value>
+                    <fullName>Rehabilitation Hospital</fullName>
+                    <default>false</default>
+                    <label>Rehabilitation Hospital</label>
+                </value>
+                <value>
+                    <fullName>Reference Laboratory</fullName>
+                    <default>false</default>
+                    <label>Reference Laboratory</label>
+                </value>
+                <value>
+                    <fullName>Pharmacy Benefit Manager</fullName>
+                    <default>false</default>
+                    <label>Pharmacy Benefit Manager</label>
+                </value>
+                <value>
+                    <fullName>Independent Physician Practice</fullName>
+                    <default>false</default>
+                    <label>Independent Physician Practice</label>
+                </value>
+                <value>
+                    <fullName>Closed-door</fullName>
+                    <default>false</default>
+                    <label>Closed-door</label>
+                </value>
+                <value>
+                    <fullName>Internet</fullName>
+                    <default>false</default>
+                    <label>Internet</label>
+                </value>
+                <value>
+                    <fullName>Other Laboratory</fullName>
+                    <default>false</default>
+                    <label>Other Laboratory</label>
+                </value>
+                <value>
+                    <fullName>Rescue</fullName>
+                    <default>false</default>
+                    <label>Rescue</label>
+                </value>
+                <value>
+                    <fullName>Warehouse</fullName>
+                    <default>false</default>
+                    <label>Warehouse</label>
+                </value>
+                <value>
+                    <fullName>Medical Group</fullName>
+                    <default>false</default>
+                    <label>Medical Group</label>
+                </value>
+                <value>
+                    <fullName>Imaging Center</fullName>
+                    <default>false</default>
+                    <label>Imaging Center</label>
+                </value>
+                <value>
+                    <fullName>Outpatient Surgi Center</fullName>
+                    <default>false</default>
+                    <label>Outpatient Surgi Center</label>
+                </value>
+                <value>
+                    <fullName>Hospital/Clinic</fullName>
+                    <default>false</default>
+                    <label>Hospital/Clinic</label>
+                </value>
+                <value>
+                    <fullName>Ambulance</fullName>
+                    <default>false</default>
+                    <label>Ambulance</label>
+                </value>
+                <value>
+                    <fullName>Manufacturer</fullName>
+                    <default>false</default>
+                    <label>Manufacturer</label>
+                </value>
+                <value>
+                    <fullName>Durable Medical Equipment</fullName>
+                    <default>false</default>
+                    <label>Durable Medical Equipment</label>
+                </value>
+                <value>
+                    <fullName>Other Insurance</fullName>
+                    <default>false</default>
+                    <label>Other Insurance</label>
+                </value>
+                <value>
+                    <fullName>Academic</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Academic</label>
+                </value>
+                <value>
+                    <fullName>Correctional Facility</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Correctional Facility</label>
+                </value>
+                <value>
+                    <fullName>Elder Care</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Elder Care</label>
+                </value>
+                <value>
+                    <fullName>Emergency</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Emergency</label>
+                </value>
+                <value>
+                    <fullName>Healthcare Information Technology</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Healthcare Information Technology</label>
+                </value>
+                <value>
+                    <fullName>Hospital</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Hospital</label>
+                </value>
+                <value>
+                    <fullName>Insurance</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Insurance</label>
+                </value>
+                <value>
+                    <fullName>Laboratory</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Laboratory</label>
+                </value>
+                <value>
+                    <fullName>Miscellaneous</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Miscellaneous</label>
+                </value>
+                <value>
+                    <fullName>Outpatient</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Outpatient</label>
+                </value>
+                <value>
+                    <fullName>Outpatient Center</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Outpatient Center</label>
+                </value>
+                <value>
+                    <fullName>Pharmacy</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Pharmacy</label>
+                </value>
+                <value>
+                    <fullName>Research</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Research</label>
+                </value>
+                <value>
+                    <fullName>Residential</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Residential</label>
+                </value>
+                <value>
+                    <fullName>Supply</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Supply</label>
+                </value>
+                <value>
+                    <fullName>Veterinary Medicine</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Veterinary Medicine</label>
+                </value>
+                <value>
+                    <fullName>Work place Wellness</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Work place Wellness</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>AssistantName</fullName>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AssistantPhone</fullName>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Birthdate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Contact_Method_Preference__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Which is the preferred method of contact for you?</inlineHelpText>
+        <label>Contact Method Preference</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Contact_Method_Preference</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Degree__c</fullName>
+        <externalId>false</externalId>
+        <label>Degree</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Doctorate</fullName>
+                    <default>false</default>
+                    <label>Doctorate</label>
+                </value>
+                <value>
+                    <fullName>Nurse</fullName>
+                    <default>false</default>
+                    <label>Nurse</label>
+                </value>
+                <value>
+                    <fullName>Office Manager</fullName>
+                    <default>false</default>
+                    <label>Office Manager</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Department</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>FirstName&amp;&quot; &quot;&amp; LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Full Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HCP_DelegateAccessLevel__c</fullName>
+        <description>Access level for HCP delegate</description>
+        <externalId>false</externalId>
+        <label>HCP Delegate Access Level</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All of same responsibilities. But can&apos;t delegate to others</fullName>
+                    <default>false</default>
+                    <label>All of same responsibilities. But can&apos;t delegate to others</label>
+                </value>
+                <value>
+                    <fullName>All, except referring a patient or delegate to others</fullName>
+                    <default>false</default>
+                    <label>All, except referring a patient or delegate to others</label>
+                </value>
+                <value>
+                    <fullName>Support Level</fullName>
+                    <default>false</default>
+                    <label>Support Level</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HCP_Interest__c</fullName>
+        <externalId>false</externalId>
+        <label>HCP Interested</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Principal Investigator</fullName>
+                    <default>false</default>
+                    <label>Principal Investigator</label>
+                </value>
+                <value>
+                    <fullName>Sub Investigator</fullName>
+                    <default>false</default>
+                    <label>Sub Investigator</label>
+                </value>
+                <value>
+                    <fullName>Not Interested</fullName>
+                    <default>false</default>
+                    <label>Not Interested</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>HCP_Interested_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>HCP Interested Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>HCP_Opt_In_Patient_Status_Emails__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>HCP Opt In Patient Status Emails</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HCP_Opt_In_Referral_Status_Emails__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>HCP Opt In Referral Status Emails</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HCP_Opt_In_Study_Emails__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>HCP Opt In Study Emails</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HomePhone</fullName>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Investigator_Key__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>Investigator Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Is_First_Logon__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <label>Is First Logon</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Language__c</fullName>
+        <externalId>false</externalId>
+        <label>Language</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Languages</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>LastCURequestDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LastCUUpdateDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Last_Session_Id__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Last Session Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>MailingAddress</fullName>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OneKeyID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>QI One Key ID Number. If an existing HCP, then value will come from ACOE.  If self-enroll, OneKey API to be called to determine if HCP exists.  Otherwise, this will get updated based on the Acknowledgement ID from OneKey.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>OneKey ID</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>OneKey_ID__c</fullName>
+        <description>QI One Key ID Number. If an existing HCP, then value will come from ACOE.  If self-enroll, OneKey API to be called to determine if HCP exists.  Otherwise, this will get updated based on the Acknowledgement ID from OneKey.</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>OneKey ID</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OtherAddress</fullName>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OtherPhone</fullName>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Override_Email__c</fullName>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Initially populated by Data Factory value, available for override</inlineHelpText>
+        <label>Override Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Override_Mailing_Address__c</fullName>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Initially populated by Data Factory value, available for override</inlineHelpText>
+        <label>Override Mailing Address</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Override_Phone__c</fullName>
+        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Initially populated by Data Factory value, available for override</inlineHelpText>
+        <label>Override Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PI_DelegateAccessLevel__c</fullName>
+        <description>Access level for PI delegate</description>
+        <externalId>false</externalId>
+        <label>PI Delegate Access Level</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>All of same responsibilities. But can&apos;t delegate to others</fullName>
+                    <default>false</default>
+                    <label>All of same responsibilities. But can&apos;t delegate to others</label>
+                </value>
+                <value>
+                    <fullName>All, except accepting HCP or delegate to others</fullName>
+                    <default>false</default>
+                    <label>All, except accepting HCP or delegate to others</label>
+                </value>
+                <value>
+                    <fullName>Support Level</fullName>
+                    <default>false</default>
+                    <label>Support Level</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Participant_Opt_In_Status_Emails__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Participant Opt In Status Emails</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Preferred_Reimbursement_Currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Preferred Reimbursement Currency</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Preferred_Reimbursement_Currency</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Prequalified__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the buyer Prequalified?</inlineHelpText>
+        <label>Prequalified?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Previous_Trial_Experience__c</fullName>
+        <description>HCP Does the physician have trial experience Y N</description>
+        <externalId>false</externalId>
+        <inlineHelpText>HCP Does the physician have trial experience Y N</inlineHelpText>
+        <label>Previous Trial Experience</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Y_N_Unknown</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Provider_ID__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Provider ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>QIDC__OK_MDM_Is_Privacy_Law_Enabled_IMS__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>If checked, this account is flagged for Privacy Law regulations.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, this account is flagged for Privacy Law regulations.</inlineHelpText>
+        <label>Is Privacy Law Enabled</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ReportsToId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Specialty__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Specialty</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Trials_in_Last_12_Months__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How many clinical trials has the physician participated in the last 12 months?</inlineHelpText>
+        <label>Trials in Last 12 Months</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trials_in_Last_36_Months__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How many clinical trials has the physician participated in the last 36 months?</inlineHelpText>
+        <label>Trials in Last 36 Months</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_of_Affiliate_Organization__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Acute care or long term hospital, office, psychiatric facility, etc</inlineHelpText>
+        <label>Classification</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pharmacy</fullName>
+                    <default>false</default>
+                    <label>Pharmacy</label>
+                </value>
+                <value>
+                    <fullName>Outpatient Center</fullName>
+                    <default>false</default>
+                    <label>Outpatient Center</label>
+                </value>
+                <value>
+                    <fullName>Correctional Facility</fullName>
+                    <default>false</default>
+                    <label>Correctional Facility</label>
+                </value>
+                <value>
+                    <fullName>Academic</fullName>
+                    <default>false</default>
+                    <label>Academic</label>
+                </value>
+                <value>
+                    <fullName>Supply</fullName>
+                    <default>false</default>
+                    <label>Supply</label>
+                </value>
+                <value>
+                    <fullName>Residential</fullName>
+                    <default>false</default>
+                    <label>Residential</label>
+                </value>
+                <value>
+                    <fullName>Healthcare Information Technology</fullName>
+                    <default>false</default>
+                    <label>Healthcare Information Technology</label>
+                </value>
+                <value>
+                    <fullName>Hospital</fullName>
+                    <default>false</default>
+                    <label>Hospital</label>
+                </value>
+                <value>
+                    <fullName>Laboratory</fullName>
+                    <default>false</default>
+                    <label>Laboratory</label>
+                </value>
+                <value>
+                    <fullName>Elder Care</fullName>
+                    <default>false</default>
+                    <label>Elder Care</label>
+                </value>
+                <value>
+                    <fullName>Insurance</fullName>
+                    <default>false</default>
+                    <label>Insurance</label>
+                </value>
+                <value>
+                    <fullName>Work place Wellness</fullName>
+                    <default>false</default>
+                    <label>Work place Wellness</label>
+                </value>
+                <value>
+                    <fullName>Miscellaneous</fullName>
+                    <default>false</default>
+                    <label>Miscellaneous</label>
+                </value>
+                <value>
+                    <fullName>Research</fullName>
+                    <default>false</default>
+                    <label>Research</label>
+                </value>
+                <value>
+                    <fullName>Emergency</fullName>
+                    <default>false</default>
+                    <label>Emergency</label>
+                </value>
+                <value>
+                    <fullName>Veterinary Medicine</fullName>
+                    <default>false</default>
+                    <label>Veterinary Medicine</label>
+                </value>
+                <value>
+                    <fullName>Acute Care</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Acute Care</label>
+                </value>
+                <value>
+                    <fullName>Long Term Hospital</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Long Term Hospital</label>
+                </value>
+                <value>
+                    <fullName>Office</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Office</label>
+                </value>
+                <value>
+                    <fullName>Psychiatric Facility</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Psychiatric Facility</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>UserCommunityIsDelegate__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>User Community Is Delegate</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>primaryContact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Primary contact of a delegate</description>
+        <externalId>false</externalId>
+        <label>Primary Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Contacts</relationshipLabel>
+        <relationshipName>Delegates</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>userCommunityMode__c</fullName>
+        <description>Current view point for Community</description>
+        <externalId>false</externalId>
+        <label>User Community Mode</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HCP</fullName>
+                    <default>false</default>
+                    <label>HCP</label>
+                </value>
+                <value>
+                    <fullName>PI</fullName>
+                    <default>false</default>
+                    <label>PI</label>
+                </value>
+                <value>
+                    <fullName>Participant</fullName>
+                    <default>false</default>
+                    <label>Participant</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>userCommunity_ShowTour__c</fullName>
+        <defaultValue>&quot;PI;HCP;Participant&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>User Community Show Tour</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PI</fullName>
+                    <default>false</default>
+                    <label>PI</label>
+                </value>
+                <value>
+                    <fullName>HCP</fullName>
+                    <default>false</default>
+                    <label>HCP</label>
+                </value>
+                <value>
+                    <fullName>Participant</fullName>
+                    <default>false</default>
+                    <label>Participant</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>userCommunytyType__c</fullName>
+        <description>User types for community - HCP / PI / Participant</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Select user types for community</inlineHelpText>
+        <label>User Community Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>HCP</fullName>
+                    <default>false</default>
+                    <label>HCP</label>
+                </value>
+                <value>
+                    <fullName>PI</fullName>
+                    <default>false</default>
+                    <label>PI</label>
+                </value>
+                <value>
+                    <fullName>Participant</fullName>
+                    <default>false</default>
+                    <label>Participant</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <listViews>
+        <fullName>AllContacts</fullName>
+        <columns>CONTACT.LAST_UPDATE</columns>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>CONTACT.RECORDTYPE</columns>
+        <columns>OneKeyID__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Contacts</label>
+    </listViews>
+    <listViews>
+        <fullName>MyContacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Contacts</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>MASTER</fullName>
+        <active>true</active>
+        <label>MASTER</label>
+        <picklistValues>
+            <picklist>Accepts_Reimbursement_for_Referral__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Affiliation__c</picklist>
+            <values>
+                <fullName>Acute Care Hospital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adult Day Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alternative Medicine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ambulance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assisted Living</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blood Bank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Central Fill</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>City%2FCounty%2FState</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Laboratory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed-door</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compounding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor - Corporate Headquarters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Durable Medical Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Assistance Programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive Health Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Federal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health Department</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospital%2FClinic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Imaging Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Living</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Physician Practice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mail Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Managed Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Bank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical School</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-health Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nuclear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nursing Homes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Osteopathic Medical School</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Laboratory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outpatient Pharmacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outpatient Surgi Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pharmacy Benefit Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physical Medicine and Rehabilitation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Psychiatric Hospital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reference Laboratory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rehabilitation Hospital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rescue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research Institute</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research Laboratory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Residential Facilities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail Pharmacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warehouse</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Affiliation_to_Organization__c</picklist>
+            <values>
+                <fullName>Acute Care Hospital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Adult Day Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Alternative Medicine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ambulance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Assisted Living</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blood Bank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Central Fill</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>City%2FCounty%2FState</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Clinical Laboratory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed-door</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Compounding</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor - Corporate Headquarters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Durable Medical Equipment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Assistance Programs</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive Health Program</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Federal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Health Department</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Home Health</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospital%2FClinic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Imaging Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Living</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Physician Practice</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mail Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Managed Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manufacturer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Bank</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical Group</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medical School</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non-health Delivery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nuclear</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nursing Homes</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Osteopathic Medical School</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Laboratory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outpatient Pharmacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outpatient Surgi Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pharmacy Benefit Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Physical Medicine and Rehabilitation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Psychiatric Hospital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Reference Laboratory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rehabilitation Hospital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rescue</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research Institute</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research Laboratory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Residential Facilities</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Retail Pharmacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Software Vendor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warehouse</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Method_Preference__c</picklist>
+            <values>
+                <fullName>Call</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Text</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Degree__c</picklist>
+            <values>
+                <fullName>Doctorate</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nurse</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Office Manager</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HCP_DelegateAccessLevel__c</picklist>
+            <values>
+                <fullName>All of same responsibilities%2E But can%27t delegate to others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>All%2C except referring a patient or delegate to others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support Level</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>HCP_Interest__c</picklist>
+            <values>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Principal Investigator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sub Investigator</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Language__c</picklist>
+            <values>
+                <fullName>en_US</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Google AdWords</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Website</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>PI_DelegateAccessLevel__c</picklist>
+            <values>
+                <fullName>All of same responsibilities%2E But can%27t delegate to others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>All%2C except accepting HCP or delegate to others</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Support Level</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Preferred_Reimbursement_Currency__c</picklist>
+            <values>
+                <fullName>EUR</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GBP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>USD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>YEN</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Prequalified__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Previous_Trial_Experience__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Affiliate_Organization__c</picklist>
+            <values>
+                <fullName>Academic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Correctional Facility</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Elder Care</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Emergency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Healthcare Information Technology</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hospital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Insurance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Laboratory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Miscellaneous</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Outpatient Center</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pharmacy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Residential</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Supply</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Veterinary Medicine</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Work place Wellness</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>userCommunityMode__c</picklist>
+            <values>
+                <fullName>HCP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Participant</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>userCommunity_ShowTour__c</picklist>
+            <values>
+                <fullName>HCP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Participant</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>userCommunytyType__c</picklist>
+            <values>
+                <fullName>HCP</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Participant</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE1</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE3</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE4</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE5</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE6</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.PHONE1</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Contact_MailingStreet}+{!Contact_MailingCity}+{!Contact_MailingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Contact_FirstName} {!Contact_LastName}</url>
+    </webLinks>
+</CustomObject>

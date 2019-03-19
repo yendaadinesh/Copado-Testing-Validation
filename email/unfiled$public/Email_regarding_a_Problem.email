@@ -1,0 +1,24 @@
+<div style="padding: 20px; color: #333333; font-size: 16px; line-height: 20px;">
+A new case has been entered into the IQVIA™ Referral Hub.
+<br/><br/>
+Case Number: <a href="{!Case.Link}">{!Case.CaseNumber}</a>
+<br/>
+Case Type: {!Case.Type}
+<br/>
+Description: {!Case.Description}
+<br/>
+Case Date: {!DATETIMEVALUE(Case.CreatedDate)} EST
+<br/>
+Case Logged By: {!Case.Contact}
+<br/>
+Case Logged By Email: {!Contact.Email}	
+                   <br/><br/>
+This message was created automatically by an IQVIA™ Referral Hub workflow rule. To modify this rule, please contact Product Support.
+                    <br/><br/>
+              <div style="color: #999999; font-size: 13px; line-height: 16px;">
+            <div style="border-top: 2px solid #CCCCCC; border-bottom: 2px solid #CCCCCC; padding-top: 10px; padding-bottom: 10px;">
+                IQVIA, 4820 Emperor Blvd, Durham, North Carolina 27703, USA |&nbsp;<a href="{!$Label.CommunityURL + '/s/privacy-policy'}">Privacy Policy</a>
+            </div>
+        </div>
+
+    </div>

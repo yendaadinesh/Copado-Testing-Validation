@@ -1,0 +1,1054 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Study_Site_Lightning_Layout</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Study_Site</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Study_Site</fullName>
+        <fields>Name</fields>
+        <fields>Clinical_Trial_Profile__c</fields>
+        <fields>Principal_Investigator__c</fields>
+        <fields>Override_PI_Referral_Status__c</fields>
+        <label>Study Site</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Study Site Profile</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Agrees_to_Referral_Reimbursement__c</fullName>
+        <externalId>false</externalId>
+        <label>Agrees to Referral Reimbursement</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Y_N_Unknown</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Billable_Code_CRM_Number__c</fullName>
+        <description>HCP/Physician Billable Code CRM Number</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>HCP/Physician Billable Code CRM Number</inlineHelpText>
+        <label>Billable Code (CRM Number)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Chart_Review__c</fullName>
+        <externalId>false</externalId>
+        <formula>Clinical_Trial_Profile__r.Chart_Review__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Trial&apos;s HCP/Physician Chart Review Amount</inlineHelpText>
+        <label>Chart Review</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cleaned_Study_Key__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Cleaned Study Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Clinical_Trial_Profile__c</fullName>
+        <description>Connects the study site to the primary study that it relates to</description>
+        <externalId>false</externalId>
+        <label>Clinical Trial Profile</label>
+        <referenceTo>Clinical_Trial_Profile__c</referenceTo>
+        <relationshipName>Study_Site_Profiles</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Enrollment_Actual__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Enrollment Actual</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Enrollment_Actual_to_Target__c</fullName>
+        <externalId>false</externalId>
+        <formula>Enrollment_Actual__c-Enrollment_Target__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Actual- Target</inlineHelpText>
+        <label>Enrollment Actual to Target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Enrollment_End_Date2__c</fullName>
+        <externalId>false</externalId>
+        <formula>Clinical_Trial_Profile__r.Estimated_Completion_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Trial Enrollment End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Enrollment_End_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>HCP/Physician Enrollment End Date</inlineHelpText>
+        <label>Enrollment End Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Enrollment_Start_Date2__c</fullName>
+        <externalId>false</externalId>
+        <formula>Clinical_Trial_Profile__r.Estimated_Start_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Trial Enrollment Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Enrollment_Start_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>HCP/Physician Enrollment Start Date</inlineHelpText>
+        <label>Enrollment Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Enrollment_Target__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Enrollment Target</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HCP_Contacted_Potential_Participant__c</fullName>
+        <externalId>false</externalId>
+        <formula>Clinical_Trial_Profile__r.HCP_Contacted_Potential_Participant__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Trial&apos;s HCP/Physician HCP Contacted Potential Participant Amount</inlineHelpText>
+        <label>HCP Contacted Potential Participant</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Is_Virtual_Study_Site__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Virtual Study Site</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Orientation__c</fullName>
+        <externalId>false</externalId>
+        <formula>Clinical_Trial_Profile__r.Orientation__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Trial&apos;s HCP/Physician Orientation Amount</inlineHelpText>
+        <label>Orientation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Override_PI_Referral_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Override PI Referral Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>On Hold</fullName>
+                    <default>false</default>
+                    <label>On Hold</label>
+                </value>
+                <value>
+                    <fullName>Accepted</fullName>
+                    <default>false</default>
+                    <label>Accepted</label>
+                </value>
+                <value>
+                    <fullName>Deactivated (Admin)</fullName>
+                    <default>false</default>
+                    <label>Deactivated (Admin)</label>
+                </value>
+                <value>
+                    <fullName>Invitation Sent</fullName>
+                    <default>false</default>
+                    <label>Invitation Sent</label>
+                </value>
+                <value>
+                    <fullName>Non-Responsive (Admin)</fullName>
+                    <default>false</default>
+                    <label>Non-Responsive (Admin)</label>
+                </value>
+                <value>
+                    <fullName>Declined (Acceptance)</fullName>
+                    <default>false</default>
+                    <label>Declined (Acceptance)</label>
+                </value>
+                <value>
+                    <fullName>Accepted (Admin)</fullName>
+                    <default>false</default>
+                    <label>Accepted (Admin)</label>
+                </value>
+                <value>
+                    <fullName>On Hold (Admin)</fullName>
+                    <default>false</default>
+                    <label>On Hold (Admin)</label>
+                </value>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Active (Admin)</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Active (Admin)</label>
+                </value>
+                <value>
+                    <fullName>No Response</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>No Response</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Rejected</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Override_Status_Updated_By__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Override Status Updated By</label>
+        <length>85</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Override_Study_Site_Recruitment_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Override Study Site Recruitment Status</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Actively Enrolling</fullName>
+                    <default>false</default>
+                    <label>Actively Enrolling</label>
+                </value>
+                <value>
+                    <fullName>On Hold</fullName>
+                    <default>false</default>
+                    <label>On Hold</label>
+                </value>
+                <value>
+                    <fullName>Enrollment Closed</fullName>
+                    <default>false</default>
+                    <label>Enrollment Closed</label>
+                </value>
+                <value>
+                    <fullName>No_Longer_Enrolling</fullName>
+                    <default>false</default>
+                    <label>No Longer Enrolling</label>
+                </value>
+                <value>
+                    <fullName>PI cannot accept referrals based on Site status</fullName>
+                    <default>false</default>
+                    <label>PI cannot accept referrals based on Site status</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PI_Contact__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK( &quot;/&quot;&amp;Principal_Investigator__c , Principal_Investigator__r.FirstName&amp;&quot; &quot; &amp;Principal_Investigator__r.LastName )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>PI Contact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PI_Pays_for_Referral_Activity__c</fullName>
+        <defaultValue>&apos;Yes&apos;</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>HCP/Physician Sponsor Pays for Referral Activity Y N</inlineHelpText>
+        <label>PI Pays for Referral Activity</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Y_N_Unknown</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>PI_Status_Reason__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Reasons why PI suspends enrollment for a clinical trial</inlineHelpText>
+        <label>PI Status Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sponsor Hold</fullName>
+                    <default>false</default>
+                    <label>Sponsor Hold</label>
+                </value>
+                <value>
+                    <fullName>Supply/resupply of investigational product</fullName>
+                    <default>false</default>
+                    <label>Supply/resupply of investigational product</label>
+                </value>
+                <value>
+                    <fullName>Supply/resupply of Study Materials (Lab Kits)</fullName>
+                    <default>false</default>
+                    <label>Supply/resupply of Study Materials (Lab Kits)</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Prescreen__c</fullName>
+        <externalId>false</externalId>
+        <formula>Clinical_Trial_Profile__r.Prescreen__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Trial&apos;s HCP/Physician Prescreen Amount</inlineHelpText>
+        <label>Prescreen</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Key__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>STDY_SITE_KEY + INVSTGR_KEY</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <inlineHelpText>STDY_SITE_KEY + INVSTGR_KEY</inlineHelpText>
+        <label>Primary Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Key_ePR__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>Primary Key ePR</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Principal_Investigator__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Principal Investigator</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>PI&apos;s Study Sites</relationshipLabel>
+        <relationshipName>Study_Site</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Project_Code__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Project Code</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Protocol_Country_Id__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>CTMS Country Id</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>Protocol Country Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Protocol_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Clinical_Trial_Profile__r.Protocol_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Clinical Trial Profile&apos;s Protocol Id</inlineHelpText>
+        <label>Protocol ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Radius_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Radius Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Miles</fullName>
+                    <default>false</default>
+                    <label>Miles</label>
+                </value>
+                <value>
+                    <fullName>Kilometers</fullName>
+                    <default>false</default>
+                    <label>Kilometers</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Radius_for_Participation__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>How far will we allow an HCP to search for a participating PI</inlineHelpText>
+        <label>Radius for Participation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Recruitment_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>CTMS Recruitment Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Approved for Site Selection Visit</fullName>
+                    <default>false</default>
+                    <label>Approved for Site Selection Visit</label>
+                </value>
+                <value>
+                    <fullName>Back-Up</fullName>
+                    <default>false</default>
+                    <label>Back-Up</label>
+                </value>
+                <value>
+                    <fullName>Closed</fullName>
+                    <default>false</default>
+                    <label>Closed</label>
+                </value>
+                <value>
+                    <fullName>Conditional Selected</fullName>
+                    <default>false</default>
+                    <label>Conditional Selected</label>
+                </value>
+                <value>
+                    <fullName>Contacted (Feasibility)</fullName>
+                    <default>false</default>
+                    <label>Contacted (Feasibility)</label>
+                </value>
+                <value>
+                    <fullName>Contacted (Site ID)</fullName>
+                    <default>false</default>
+                    <label>Contacted (Site ID)</label>
+                </value>
+                <value>
+                    <fullName>Dropped</fullName>
+                    <default>false</default>
+                    <label>Dropped</label>
+                </value>
+                <value>
+                    <fullName>Enrollment Closed</fullName>
+                    <default>false</default>
+                    <label>Enrollment Closed</label>
+                </value>
+                <value>
+                    <fullName>Enrollment On-Hold</fullName>
+                    <default>false</default>
+                    <label>Enrollment On-Hold</label>
+                </value>
+                <value>
+                    <fullName>Enrollment Open</fullName>
+                    <default>false</default>
+                    <label>Enrollment Open</label>
+                </value>
+                <value>
+                    <fullName>Essential Documents in place</fullName>
+                    <default>false</default>
+                    <label>Essential Documents in place</label>
+                </value>
+                <value>
+                    <fullName>Initiated</fullName>
+                    <default>false</default>
+                    <label>Initiated</label>
+                </value>
+                <value>
+                    <fullName>Interested (Feasibility)</fullName>
+                    <default>false</default>
+                    <label>Interested (Feasibility)</label>
+                </value>
+                <value>
+                    <fullName>Interested (Site ID)</fullName>
+                    <default>false</default>
+                    <label>Interested (Site ID)</label>
+                </value>
+                <value>
+                    <fullName>Non-Responder (Feasibility)</fullName>
+                    <default>false</default>
+                    <label>Non-Responder (Feasibility)</label>
+                </value>
+                <value>
+                    <fullName>Non-Responder (Site ID)</fullName>
+                    <default>false</default>
+                    <label>Non-Responder (Site ID)</label>
+                </value>
+                <value>
+                    <fullName>Not Interested (Feasibility)</fullName>
+                    <default>false</default>
+                    <label>Not Interested (Feasibility)</label>
+                </value>
+                <value>
+                    <fullName>Not Interested (Site ID)</fullName>
+                    <default>false</default>
+                    <label>Not Interested (Site ID)</label>
+                </value>
+                <value>
+                    <fullName>Not Selected</fullName>
+                    <default>false</default>
+                    <label>Not Selected</label>
+                </value>
+                <value>
+                    <fullName>Null</fullName>
+                    <default>false</default>
+                    <label>Null</label>
+                </value>
+                <value>
+                    <fullName>Permanently Closed</fullName>
+                    <default>false</default>
+                    <label>Permanently Closed</label>
+                </value>
+                <value>
+                    <fullName>Prematurely Closed</fullName>
+                    <default>false</default>
+                    <label>Prematurely Closed</label>
+                </value>
+                <value>
+                    <fullName>Pre-Selected</fullName>
+                    <default>false</default>
+                    <label>Pre-Selected</label>
+                </value>
+                <value>
+                    <fullName>Ready for Initiation</fullName>
+                    <default>false</default>
+                    <label>Ready for Initiation</label>
+                </value>
+                <value>
+                    <fullName>Regulatory Green Light</fullName>
+                    <default>false</default>
+                    <label>Regulatory Green Light</label>
+                </value>
+                <value>
+                    <fullName>Regulatory Initiation</fullName>
+                    <default>false</default>
+                    <label>Regulatory Initiation</label>
+                </value>
+                <value>
+                    <fullName>Rejected for Site Selection Visit</fullName>
+                    <default>false</default>
+                    <label>Rejected for Site Selection Visit</label>
+                </value>
+                <value>
+                    <fullName>Selected</fullName>
+                    <default>false</default>
+                    <label>Selected</label>
+                </value>
+                <value>
+                    <fullName>Targeted</fullName>
+                    <default>false</default>
+                    <label>Targeted</label>
+                </value>
+                <value>
+                    <fullName>Unsure (Feasibility)</fullName>
+                    <default>false</default>
+                    <label>Unsure (Feasibility)</label>
+                </value>
+                <value>
+                    <fullName>Approved for SSV</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Approved for SSV</label>
+                </value>
+                <value>
+                    <fullName>Backup</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Backup</label>
+                </value>
+                <value>
+                    <fullName>Enrollment On Hold</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Enrollment On Hold</label>
+                </value>
+                <value>
+                    <fullName>Preselected</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Preselected</label>
+                </value>
+                <value>
+                    <fullName>Rejected for SSV</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Rejected for SSV</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Referral__c</fullName>
+        <externalId>false</externalId>
+        <formula>Clinical_Trial_Profile__r.Referral__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Trial&apos;s HCP/Physician Referral Amount</inlineHelpText>
+        <label>Referral</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>SPNL_LN_assignment__c</fullName>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>SPNL LN (assignment)</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Site_Link__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;&amp; Site__c , Site__r.Name )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Site</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Site__c</fullName>
+        <externalId>false</externalId>
+        <label>Site</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Study Sites</relationshipLabel>
+        <relationshipName>Study_Sites</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Sponsor_Pays_for_Referral_Activity__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Clinical_Trial_Profile__r.Sponsor_Pays_for_Referral_Activity__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sponsor Pays for Referral Activity</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Study_Site_Full_Name__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Study Site Full Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Study_Site_Key__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>Study Site Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Study_Site_Number__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>Study Site Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Study_Site_Phone__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Phone number referenced in the email for Virtual Trial Participants</inlineHelpText>
+        <label>Study Site Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Study_Site_Status_Reason__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Reason for Pausing Studies</inlineHelpText>
+        <label>Study Site Status Reason</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sponsor Initiated Hold</fullName>
+                    <default>false</default>
+                    <label>Sponsor Initiated Hold</label>
+                </value>
+                <value>
+                    <fullName>Supply/Resupply of Investigational Product</fullName>
+                    <default>false</default>
+                    <label>Supply/Resupply of Investigational Product</label>
+                </value>
+                <value>
+                    <fullName>Supply/Resupply of Supplies/Materials (i.e., Lab Kits)</fullName>
+                    <default>false</default>
+                    <label>Supply/Resupply of Supplies/Materials (i.e., Lab Kits)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Suppress_Participant_Emails__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked, no emails will be sent to participants for this study site.</inlineHelpText>
+        <label>Suppress Participant Emails</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Study Site</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>LAST_UPDATE</columns>
+        <columns>Protocol_ID__c</columns>
+        <columns>Billable_Code_CRM_Number__c</columns>
+        <columns>Clinical_Trial_Profile__c</columns>
+        <columns>Study_Site_Number__c</columns>
+        <columns>NAME</columns>
+        <columns>Principal_Investigator__c</columns>
+        <columns>Override_PI_Referral_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>PI_Recruitment_Support</fullName>
+        <columns>Enrollment_Actual_to_Target__c</columns>
+        <columns>Enrollment_Target__c</columns>
+        <columns>Enrollment_Actual__c</columns>
+        <columns>Override_PI_Referral_Status__c</columns>
+        <columns>Clinical_Trial_Profile__c</columns>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Enrollment_Actual_to_Target__c</field>
+            <operation>lessThan</operation>
+            <value>0</value>
+        </filters>
+        <label>PI Recruitment Support</label>
+    </listViews>
+    <listViews>
+        <fullName>Study_Sites_Rejected_by_PI</fullName>
+        <columns>Study_Site_Number__c</columns>
+        <columns>NAME</columns>
+        <columns>Principal_Investigator__c</columns>
+        <columns>Clinical_Trial_Profile__c</columns>
+        <columns>Override_PI_Referral_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Override_PI_Referral_Status__c</field>
+            <operation>equals</operation>
+            <value>Accepted,Invitation Sent,Declined (Acceptance),Accepted (Admin)</value>
+        </filters>
+        <label>Study Sites by PI Status</label>
+    </listViews>
+    <listViews>
+        <fullName>test</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>test</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <encryptionScheme>None</encryptionScheme>
+        <label>Study Site Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Study Sites</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Clinical_Trial_Profile__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>Clinical_Trial_Profile__c</searchFilterFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchResultsAdditionalFields>Clinical_Trial_Profile__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Study_Site_Number__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>PI_Hold</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(ISCHANGED(Override_PI_Referral_Status__c ),
+(ISPICKVAL(PRIORVALUE(Override_PI_Referral_Status__c ), &quot;On Hold&quot;)),ISPICKVAL(Override_Study_Site_Recruitment_Status__c, &quot;On Hold&quot;) )</errorConditionFormula>
+        <errorMessage>This Override PI Recruitment Status value cannot be changed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Site_On_Hold</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(ISCHANGED(Override_Study_Site_Recruitment_Status__c),
+
+ISPICKVAL(PRIORVALUE(Override_Study_Site_Recruitment_Status__c), &quot;On Hold&quot;), 
+
+ISPICKVAL(Clinical_Trial_Profile__r.Override_Recruitment_Status__c, &quot;On Hold&quot;))</errorConditionFormula>
+        <errorMessage>This Override Study Site Recruitment Status value cannot be changed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Start_End_enrolment_date</fullName>
+        <active>false</active>
+        <errorConditionFormula>Enrollment_Start_Date__c  &gt;  Enrollment_End_Date__c</errorConditionFormula>
+        <errorMessage>Enrollment End Date can&apos;t happen before Enrolment Start Date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Study_Site_Status_Freeze</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(
+ISCHANGED(Override_Study_Site_Recruitment_Status__c),
+ISPICKVAL(PRIORVALUE(Override_Study_Site_Recruitment_Status__c),&quot;Enrollment Closed&quot;)
+, Override_Status_Updated_By__c = &apos;IQVIA SPNL&apos;)</errorConditionFormula>
+        <errorMessage>This Override Study Site Recruitment Status value cannot be changed</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

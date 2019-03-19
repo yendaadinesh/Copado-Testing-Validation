@@ -1,0 +1,32 @@
+<div style="max-width: 600px; background-color: #F3F3F3;padding: 20px; font-family: Arial;">
+        <div style="margin: auto; margin-top: 20px; background: #FFFFFF;  ">
+           <div style="background-color: #250056; color: #FFFFFF; padding: 20px;">
+                <div style="font-size: 18px; line-height: 21px;">Thank you for your interest in participating in a clinical research study  </div>
+                <div style="font-size: 24px; font-weight: bold;	line-height: 28px;">IQVIA™ Referral Hub </div>
+            </div>
+            <div style="padding: 20px; color: #333333; font-size: 16px; line-height: 20px;">
+
+             Dear {!Participant_Enrollment__c.Participant_Name__c},
+                <br/><br/>
+Your referral is on hold for the clinical research study:   
+ {!Participant_Enrollment__c.00N1I00000MHREW}.   
+You will be contacted promptly if the study once again begins accepting referrals or if the status of your referral changes.  
+   <br/><br/>
+The study team can be reached at {!Participant_Enrollment__c.00N1I00000NDSy1} with any questions or comments regarding the study or the referral process.
+                 <br/><br/>
+Sincerely,
+   <br/><br/>
+IQVIA Study Team               
+</div>
+</div>
+</div>
+        <div style="padding-top:30px; padding-bottom:30px; text-align: center;">
+<img src=" {!$Label.CommunityEmailLogo} "/>
+        </div>
+        <div style="color: #999999; font-size: 13px; line-height: 16px;">
+            <div style="border-top: 2px solid #CCCCCC; border-bottom: 2px solid #CCCCCC; padding-top: 10px; padding-bottom: 10px;">
+                IQVIA, 4820 Emperor Blvd, Durham, North Carolina 27703, USA |&nbsp;<a href="{!$Label.CommunityURL + '/s/privacy-policy'}">Privacy Policy</a>
+            </div>
+        </div>
+
+    </div>

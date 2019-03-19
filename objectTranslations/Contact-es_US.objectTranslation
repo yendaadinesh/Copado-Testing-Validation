@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Will accept reimbursement for referrals? --></help>
+        <label><!-- Accepts Reimbursement for Referral --></label>
+        <name>Accepts_Reimbursement_for_Referral__c</name>
+    </fields>
+    <fields>
+        <help><!-- will accept reimbursement for referrals --></help>
+        <label><!-- Accepts Reimbursements for Referrals --></label>
+        <name>Accepts_Reimbursements_for_Referrals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acknowledgement ID --></label>
+        <name>Acknowledgement_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- HCP Affiliations: Classification of the physician&apos;s affiliate organization (hospital, outpatient, academic, etc) --></help>
+        <label><!-- Affiliation --></label>
+        <name>Affiliation__c</name>
+        <picklistValues>
+            <masterLabel>Acute Care Hospital</masterLabel>
+            <translation><!-- Acute Care Hospital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adult Day Care</masterLabel>
+            <translation><!-- Adult Day Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alternative Medicine</masterLabel>
+            <translation><!-- Alternative Medicine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ambulance</masterLabel>
+            <translation><!-- Ambulance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assisted Living</masterLabel>
+            <translation><!-- Assisted Living --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blood Bank</masterLabel>
+            <translation><!-- Blood Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central Fill</masterLabel>
+            <translation><!-- Central Fill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>City/County/State</masterLabel>
+            <translation><!-- City/County/State --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinic</masterLabel>
+            <translation><!-- Clinic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical Laboratory</masterLabel>
+            <translation><!-- Clinical Laboratory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed-door</masterLabel>
+            <translation><!-- Closed-door --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compounding</masterLabel>
+            <translation><!-- Compounding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributor</masterLabel>
+            <translation><!-- Distributor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributor - Corporate Headquarters</masterLabel>
+            <translation><!-- Distributor - Corporate Headquarters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Durable Medical Equipment</masterLabel>
+            <translation><!-- Durable Medical Equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Assistance Programs</masterLabel>
+            <translation><!-- Employee Assistance Programs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Health Program</masterLabel>
+            <translation><!-- Executive Health Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Federal</masterLabel>
+            <translation><!-- Federal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Department</masterLabel>
+            <translation><!-- Health Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Health</masterLabel>
+            <translation><!-- Home Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital/Clinic</masterLabel>
+            <translation><!-- Hospital/Clinic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Imaging Center</masterLabel>
+            <translation><!-- Imaging Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent Living</masterLabel>
+            <translation><!-- Independent Living --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent Physician Practice</masterLabel>
+            <translation><!-- Independent Physician Practice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internet</masterLabel>
+            <translation><!-- Internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail Service</masterLabel>
+            <translation><!-- Mail Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managed Care</masterLabel>
+            <translation><!-- Managed Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturer</masterLabel>
+            <translation><!-- Manufacturer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Bank</masterLabel>
+            <translation><!-- Medical Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Group</masterLabel>
+            <translation><!-- Medical Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical School</masterLabel>
+            <translation><!-- Medical School --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-health Delivery</masterLabel>
+            <translation><!-- Non-health Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nuclear</masterLabel>
+            <translation><!-- Nuclear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nursing Homes</masterLabel>
+            <translation><!-- Nursing Homes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Osteopathic Medical School</masterLabel>
+            <translation><!-- Osteopathic Medical School --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Insurance</masterLabel>
+            <translation><!-- Other Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Laboratory</masterLabel>
+            <translation><!-- Other Laboratory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outpatient Pharmacy</masterLabel>
+            <translation><!-- Outpatient Pharmacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outpatient Surgi Center</masterLabel>
+            <translation><!-- Outpatient Surgi Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacy Benefit Manager</masterLabel>
+            <translation><!-- Pharmacy Benefit Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical Medicine and Rehabilitation</masterLabel>
+            <translation><!-- Physical Medicine and Rehabilitation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Psychiatric Hospital</masterLabel>
+            <translation><!-- Psychiatric Hospital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reference Laboratory</masterLabel>
+            <translation><!-- Reference Laboratory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rehabilitation Hospital</masterLabel>
+            <translation><!-- Rehabilitation Hospital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rescue</masterLabel>
+            <translation><!-- Rescue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Institute</masterLabel>
+            <translation><!-- Research Institute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Laboratory</masterLabel>
+            <translation><!-- Research Laboratory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Facilities</masterLabel>
+            <translation><!-- Residential Facilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Pharmacy</masterLabel>
+            <translation><!-- Retail Pharmacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software Vendor</masterLabel>
+            <translation><!-- Software Vendor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warehouse</masterLabel>
+            <translation><!-- Warehouse --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- HCP Affiliations: Classification of the physician&apos;s affiliate organization (hospital, outpatient, academic, etc) --></help>
+        <label><!-- Facility Type --></label>
+        <name>Affiliation_to_Organization__c</name>
+        <picklistValues>
+            <masterLabel>Acute Care Hospital</masterLabel>
+            <translation><!-- Acute Care Hospital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adult Day Care</masterLabel>
+            <translation><!-- Adult Day Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alternative Medicine</masterLabel>
+            <translation><!-- Alternative Medicine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ambulance</masterLabel>
+            <translation><!-- Ambulance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assisted Living</masterLabel>
+            <translation><!-- Assisted Living --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blood Bank</masterLabel>
+            <translation><!-- Blood Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central Fill</masterLabel>
+            <translation><!-- Central Fill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>City/County/State</masterLabel>
+            <translation><!-- City/County/State --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinic</masterLabel>
+            <translation><!-- Clinic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Clinical Laboratory</masterLabel>
+            <translation><!-- Clinical Laboratory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed-door</masterLabel>
+            <translation><!-- Closed-door --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compounding</masterLabel>
+            <translation><!-- Compounding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributor</masterLabel>
+            <translation><!-- Distributor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distributor - Corporate Headquarters</masterLabel>
+            <translation><!-- Distributor - Corporate Headquarters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Durable Medical Equipment</masterLabel>
+            <translation><!-- Durable Medical Equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Assistance Programs</masterLabel>
+            <translation><!-- Employee Assistance Programs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Health Program</masterLabel>
+            <translation><!-- Executive Health Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Federal</masterLabel>
+            <translation><!-- Federal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health Department</masterLabel>
+            <translation><!-- Health Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Home Health</masterLabel>
+            <translation><!-- Home Health --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital/Clinic</masterLabel>
+            <translation><!-- Hospital/Clinic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Imaging Center</masterLabel>
+            <translation><!-- Imaging Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent Living</masterLabel>
+            <translation><!-- Independent Living --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent Physician Practice</masterLabel>
+            <translation><!-- Independent Physician Practice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internet</masterLabel>
+            <translation><!-- Internet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mail Service</masterLabel>
+            <translation><!-- Mail Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Managed Care</masterLabel>
+            <translation><!-- Managed Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturer</masterLabel>
+            <translation><!-- Manufacturer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Bank</masterLabel>
+            <translation><!-- Medical Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical Group</masterLabel>
+            <translation><!-- Medical Group --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medical School</masterLabel>
+            <translation><!-- Medical School --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-health Delivery</masterLabel>
+            <translation><!-- Non-health Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nuclear</masterLabel>
+            <translation><!-- Nuclear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nursing Homes</masterLabel>
+            <translation><!-- Nursing Homes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Osteopathic Medical School</masterLabel>
+            <translation><!-- Osteopathic Medical School --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Insurance</masterLabel>
+            <translation><!-- Other Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Laboratory</masterLabel>
+            <translation><!-- Other Laboratory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outpatient Pharmacy</masterLabel>
+            <translation><!-- Outpatient Pharmacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outpatient Surgi Center</masterLabel>
+            <translation><!-- Outpatient Surgi Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacy Benefit Manager</masterLabel>
+            <translation><!-- Pharmacy Benefit Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Physical Medicine and Rehabilitation</masterLabel>
+            <translation><!-- Physical Medicine and Rehabilitation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Psychiatric Hospital</masterLabel>
+            <translation><!-- Psychiatric Hospital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reference Laboratory</masterLabel>
+            <translation><!-- Reference Laboratory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rehabilitation Hospital</masterLabel>
+            <translation><!-- Rehabilitation Hospital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rescue</masterLabel>
+            <translation><!-- Rescue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Institute</masterLabel>
+            <translation><!-- Research Institute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Laboratory</masterLabel>
+            <translation><!-- Research Laboratory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Facilities</masterLabel>
+            <translation><!-- Residential Facilities --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Pharmacy</masterLabel>
+            <translation><!-- Retail Pharmacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software Vendor</masterLabel>
+            <translation><!-- Software Vendor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warehouse</masterLabel>
+            <translation><!-- Warehouse --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Which is the preferred method of contact for you? --></help>
+        <label><!-- Contact Method Preference --></label>
+        <name>Contact_Method_Preference__c</name>
+    </fields>
+    <fields>
+        <label><!-- Degree --></label>
+        <name>Degree__c</name>
+        <picklistValues>
+            <masterLabel>Doctorate</masterLabel>
+            <translation><!-- Doctorate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nurse</masterLabel>
+            <translation><!-- Nurse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Office Manager</masterLabel>
+            <translation><!-- Office Manager --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Full Name --></label>
+        <name>Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- HCP Delegate Access Level --></label>
+        <name>HCP_DelegateAccessLevel__c</name>
+        <picklistValues>
+            <masterLabel>All of same responsibilities. But can&apos;t delegate to others</masterLabel>
+            <translation>Todas las mismas responsabilidades, pero no pueden delegarse a otros</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All, except referring a patient or delegate to others</masterLabel>
+            <translation>Todas, excepto referir a un paciente o delegar a otros</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Level</masterLabel>
+            <translation>Nivel de soporte</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HCP Interested --></label>
+        <name>HCP_Interest__c</name>
+        <picklistValues>
+            <masterLabel>Not Interested</masterLabel>
+            <translation><!-- Not Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Principal Investigator</masterLabel>
+            <translation><!-- Principal Investigator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sub Investigator</masterLabel>
+            <translation><!-- Sub Investigator --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HCP Interested Date --></label>
+        <name>HCP_Interested_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- HCP Opt In Patient Status Emails --></label>
+        <name>HCP_Opt_In_Patient_Status_Emails__c</name>
+    </fields>
+    <fields>
+        <label><!-- HCP Opt In Referral Status Emails --></label>
+        <name>HCP_Opt_In_Referral_Status_Emails__c</name>
+    </fields>
+    <fields>
+        <label><!-- HCP Opt In Study Emails --></label>
+        <name>HCP_Opt_In_Study_Emails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investigator Key --></label>
+        <name>Investigator_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is First Logon --></label>
+        <name>Is_First_Logon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Language --></label>
+        <name>Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Session Id --></label>
+        <name>Last_Session_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- OneKey ID --></label>
+        <name>OneKeyID__c</name>
+    </fields>
+    <fields>
+        <label><!-- OneKey ID --></label>
+        <name>OneKey_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Initially populated by Data Factory value, available for override --></help>
+        <label><!-- Override Email --></label>
+        <name>Override_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Initially populated by Data Factory value, available for override --></help>
+        <label><!-- Override Mailing Address --></label>
+        <name>Override_Mailing_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Initially populated by Data Factory value, available for override --></help>
+        <label><!-- Override Phone --></label>
+        <name>Override_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- PI Delegate Access Level --></label>
+        <name>PI_DelegateAccessLevel__c</name>
+        <picklistValues>
+            <masterLabel>All of same responsibilities. But can&apos;t delegate to others</masterLabel>
+            <translation>Todas las mismas responsabilidades, pero no pueden delegarse a otros</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All, except accepting HCP or delegate to others</masterLabel>
+            <translation>Todas, excepto aceptar un PS o delegar a otros</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Support Level</masterLabel>
+            <translation>Nivel de soporte</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Participant Opt In Status Emails --></label>
+        <name>Participant_Opt_In_Status_Emails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Reimbursement Currency --></label>
+        <name>Preferred_Reimbursement_Currency__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the buyer Prequalified? --></help>
+        <label><!-- Prequalified? --></label>
+        <name>Prequalified__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- HCP Does the physician have trial experience Y N --></help>
+        <label><!-- Previous Trial Experience --></label>
+        <name>Previous_Trial_Experience__c</name>
+    </fields>
+    <fields>
+        <label><!-- Provider ID --></label>
+        <name>Provider_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this account is flagged for Privacy Law regulations. --></help>
+        <label><!-- Is Privacy Law Enabled --></label>
+        <name>QIDC__OK_MDM_Is_Privacy_Law_Enabled_IMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specialty --></label>
+        <name>Specialty__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many clinical trials has the physician participated in the last 12 months? --></help>
+        <label><!-- Trials in Last 12 Months --></label>
+        <name>Trials_in_Last_12_Months__c</name>
+    </fields>
+    <fields>
+        <help><!-- How many clinical trials has the physician participated in the last 36 months? --></help>
+        <label><!-- Trials in Last 36 Months --></label>
+        <name>Trials_in_Last_36_Months__c</name>
+    </fields>
+    <fields>
+        <help><!-- Acute care or long term hospital, office, psychiatric facility, etc --></help>
+        <label><!-- Classification --></label>
+        <name>Type_of_Affiliate_Organization__c</name>
+        <picklistValues>
+            <masterLabel>Academic</masterLabel>
+            <translation><!-- Academic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Correctional Facility</masterLabel>
+            <translation><!-- Correctional Facility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elder Care</masterLabel>
+            <translation><!-- Elder Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency</masterLabel>
+            <translation><!-- Emergency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Healthcare Information Technology</masterLabel>
+            <translation><!-- Healthcare Information Technology --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hospital</masterLabel>
+            <translation><!-- Hospital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laboratory</masterLabel>
+            <translation><!-- Laboratory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miscellaneous</masterLabel>
+            <translation><!-- Miscellaneous --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outpatient Center</masterLabel>
+            <translation><!-- Outpatient Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmacy</masterLabel>
+            <translation><!-- Pharmacy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research</masterLabel>
+            <translation><!-- Research --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential</masterLabel>
+            <translation><!-- Residential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supply</masterLabel>
+            <translation><!-- Supply --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veterinary Medicine</masterLabel>
+            <translation><!-- Veterinary Medicine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work place Wellness</masterLabel>
+            <translation><!-- Work place Wellness --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Community Is Delegate --></label>
+        <name>UserCommunityIsDelegate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>primaryContact__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User Community Mode --></label>
+        <name>userCommunityMode__c</name>
+        <picklistValues>
+            <masterLabel>HCP</masterLabel>
+            <translation><!-- HCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PI</masterLabel>
+            <translation><!-- PI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Participant</masterLabel>
+            <translation><!-- Participant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Community Show Tour --></label>
+        <name>userCommunity_ShowTour__c</name>
+        <picklistValues>
+            <masterLabel>HCP</masterLabel>
+            <translation><!-- HCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PI</masterLabel>
+            <translation><!-- PI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Participant</masterLabel>
+            <translation><!-- Participant --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select user types for community --></help>
+        <label><!-- User Community Type --></label>
+        <name>userCommunytyType__c</name>
+        <picklistValues>
+            <masterLabel>HCP</masterLabel>
+            <translation><!-- HCP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PI</masterLabel>
+            <translation><!-- PI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Participant</masterLabel>
+            <translation><!-- Participant --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- MASTER --></label>
+        <name>MASTER</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,1599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Participant_Enrollment_Lightning_Layout</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Participant_Enrollment</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Participant_Enrollment</fullName>
+        <fields>Name</fields>
+        <fields>Study__c</fields>
+        <fields>Study_Site__c</fields>
+        <fields>PI_Contact__c</fields>
+        <fields>Participant_Status__c</fields>
+        <label>Participant Enrollment</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Participant Profile</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fieldSets>
+        <fullName>ExportExcel</fullName>
+        <description>For export Excel only</description>
+        <displayedFields>
+            <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Clinical_Trial_Profile__r.Study_Code_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Study_Site__r.Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Participant_Status_Last_Changed_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Participant_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Medical_Record_Review_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Medical_Record_Review_Completedby_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Pre_screening_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Pre_Eligibility_Date__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Referral_Completedby_Name__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>ExportExcel</label>
+    </fieldSets>
+    <fields>
+        <fullName>Clinical_Trial_Profile__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Clinical Trial Profile</label>
+        <referenceTo>Clinical_Trial_Profile__c</referenceTo>
+        <relationshipLabel>Participant Enrollments</relationshipLabel>
+        <relationshipName>Participant_Enrollments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Consulted_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Date when the Potential Participant was consulted</inlineHelpText>
+        <label>Consulted Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Consulted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Has the Potential Participant been consulted on the clinical trial?</inlineHelpText>
+        <label>Consulted</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Contacted_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Date when contact has been made with the Potential Participant</inlineHelpText>
+        <label>Contacted Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Contacted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Has contact been made with the Potential Participant?</inlineHelpText>
+        <label>Contacted</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Eligible_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Date Potential Participant went through Eligible questions with PI</inlineHelpText>
+        <label>Eligible Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Eligible__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Opportunity for PI to ask more questions than was done in the Pre-eligilibity screening to confirm Potential Participant eligibility in a clinical trial</inlineHelpText>
+        <label>Eligible</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Enrolled_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Date enrollment completed</inlineHelpText>
+        <label>Enrolled Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Enrolled__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the Potential Participant get enrolled into the Clinical Trial</inlineHelpText>
+        <label>Enrolled</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HCP_Account__c</fullName>
+        <description>For Workflow Emails</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>HCP Account</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HCP_Contact_HCPEnroll__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Testing</description>
+        <externalId>false</externalId>
+        <label>HCP Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Participant Enrollments (HCP Contact)</relationshipLabel>
+        <relationshipName>Participant_Enrollments2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>HCP_Contact__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;&amp; HCP__r.HCP_Contact__c ,HCP__r.HCP_Contact__r.FirstName&amp;&quot; &quot;&amp;  HCP__r.HCP_Contact__r.LastName )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HCP Contact</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HCP__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>HCP</label>
+        <referenceTo>HCP_Enrollment__c</referenceTo>
+        <relationshipLabel>Participant Enrollments</relationshipLabel>
+        <relationshipName>Participant_Enrollments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>IVRS_IWRS__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Obtain the Interactive Voice Response System (IVRS) Number/ Interactive Web Response System (IWRS) Number for the  participant</inlineHelpText>
+        <label>IVRS/IWRS#</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Informed_Consent_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Date Informed Consent was provided</inlineHelpText>
+        <label>Informed Consent Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Informed_Consent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the Potential Participant provide informed consent?</inlineHelpText>
+        <label>Informed Consent</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Interested_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Date when the Potential Participant identified interest</inlineHelpText>
+        <label>Interested Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Interested__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Is the Potential Participant interested in participating in the clinical trial?</inlineHelpText>
+        <label>Interested</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Is_Virtual_Study_Site__c</fullName>
+        <externalId>false</externalId>
+        <formula>Study_Site__r.Is_Virtual_Study_Site__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Is Virtual Study Site</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Last_Status_Changed_Notes__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Last Status Changed Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Medical_Record_Review_Completed_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Medical Record Review Completed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Medical_Record_Review_Completed_by__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Medical Record Review Completed by</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Participant Enrollments (Medical Record Review Completed by)</relationshipLabel>
+        <relationshipName>Participant_Enrollments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Medical_Record_Review_Completedby_Name__c</fullName>
+        <description>Medical Record Review Completed by</description>
+        <externalId>false</externalId>
+        <formula>Medical_Record_Review_Completed_by__r.FirstName &amp; &quot; &quot; &amp;  Medical_Record_Review_Completed_by__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Medical Record Review Completed by</inlineHelpText>
+        <label>Medical Record Review Completed by</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Medical_Record_Review_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Medical Record Review Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Not Required</fullName>
+                    <default>false</default>
+                    <label>Not Required</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>No_Suitable_Site__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>After the Potential Participant reviews the list of available sites, if they do not like any, then they can select this and it ends the referral process.</inlineHelpText>
+        <label>No Suitable Site</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Y_N_Unknown</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Non_Enrollment_Notes__c</fullName>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Free form field to add in any additional comments concerning non-enrollment</inlineHelpText>
+        <label>Non-Enrollment Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Non_Enrollment_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Non-Enrollment Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Participant_Status__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Site No Longer Accepting Referrals</fullName>
+                    <default>false</default>
+                    <label>Site No Longer Accepting Referrals</label>
+                </value>
+                <value>
+                    <fullName>Didn&apos;t Meet Pre-Screening Eligibility</fullName>
+                    <default>false</default>
+                    <label>Didn&apos;t Meet Pre-Screening Eligibility</label>
+                </value>
+                <value>
+                    <fullName>Declined Practitioner</fullName>
+                    <default>false</default>
+                    <label>Declined Practitioner</label>
+                </value>
+                <value>
+                    <fullName>PI Decision</fullName>
+                    <default>false</default>
+                    <label>PI Decision</label>
+                </value>
+                <value>
+                    <fullName>Didn&apos;t Show For Initial Visit</fullName>
+                    <default>false</default>
+                    <label>Didn&apos;t Show For Initial Visit</label>
+                </value>
+                <value>
+                    <fullName>Didn&apos;t Sign Consent</fullName>
+                    <default>false</default>
+                    <label>Didn&apos;t Sign Consent</label>
+                </value>
+                <value>
+                    <fullName>Failed Inclusion/Exclusion Criteria</fullName>
+                    <default>false</default>
+                    <label>Failed Inclusion/Exclusion Criteria</label>
+                </value>
+                <value>
+                    <fullName>Patient Declined</fullName>
+                    <default>false</default>
+                    <label>Patient Declined</label>
+                </value>
+                <value>
+                    <fullName>Visit Out Of Window</fullName>
+                    <default>false</default>
+                    <label>Visit Out Of Window</label>
+                </value>
+                <value>
+                    <fullName>Patient Decision</fullName>
+                    <default>false</default>
+                    <label>Patient Decision</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Could not schedule visit</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Could not schedule visit</label>
+                </value>
+                <value>
+                    <fullName>Did not respond to contact attempts</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Did not respond to contact attempts</label>
+                </value>
+                <value>
+                    <fullName>Failed screening / does not qualify</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Failed screening / does not qualify</label>
+                </value>
+                <value>
+                    <fullName>No longer interested</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>No longer interested</label>
+                </value>
+                <value>
+                    <fullName>No show for scheduled visit</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>No show for scheduled visit</label>
+                </value>
+                <value>
+                    <fullName>Not eligible</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Not eligible</label>
+                </value>
+                <value>
+                    <fullName>Not willing to sign informed consent</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Not willing to sign informed consent</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Referral Declined</controllingFieldValue>
+                <valueName>Site No Longer Accepting Referrals</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Referral Declined</controllingFieldValue>
+                <controllingFieldValue>Eligibility Failed</controllingFieldValue>
+                <controllingFieldValue>Screening Failed</controllingFieldValue>
+                <controllingFieldValue>Enrollment Failed</controllingFieldValue>
+                <valueName>Other</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Eligibility Failed</controllingFieldValue>
+                <valueName>Didn&apos;t Meet Pre-Screening Eligibility</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Eligibility Failed</controllingFieldValue>
+                <valueName>Declined Practitioner</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Eligibility Failed</controllingFieldValue>
+                <controllingFieldValue>Enrollment Failed</controllingFieldValue>
+                <valueName>PI Decision</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Screening Failed</controllingFieldValue>
+                <valueName>Didn&apos;t Show For Initial Visit</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Enrollment Failed</controllingFieldValue>
+                <valueName>Didn&apos;t Sign Consent</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Enrollment Failed</controllingFieldValue>
+                <valueName>Failed Inclusion/Exclusion Criteria</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Enrollment Failed</controllingFieldValue>
+                <valueName>Patient Declined</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Enrollment Failed</controllingFieldValue>
+                <valueName>Visit Out Of Window</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Enrollment Failed</controllingFieldValue>
+                <valueName>Patient Decision</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Non_Referral_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Date non-referral reason identified</inlineHelpText>
+        <label>Non-Referral Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Non_Referral_Notes__c</fullName>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Free form field to add in any additional comments concerning non-referral</inlineHelpText>
+        <label>Non-Referral Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Non_Referral_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Non- Referral Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Had Discussion, Not Interested</fullName>
+                    <default>false</default>
+                    <label>Had Discussion, Not Interested</label>
+                </value>
+                <value>
+                    <fullName>No Longer Interested</fullName>
+                    <default>false</default>
+                    <label>No Longer Interested</label>
+                </value>
+                <value>
+                    <fullName>Failed Pre-Eligibility Screening</fullName>
+                    <default>false</default>
+                    <label>Failed Pre-Eligibility Screening</label>
+                </value>
+                <value>
+                    <fullName>Did not pass chart review</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Did not pass chart review</label>
+                </value>
+                <value>
+                    <fullName>Did not pass pre-eligibility</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Did not pass pre-eligibility</label>
+                </value>
+                <value>
+                    <fullName>No suitable site</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>No suitable site</label>
+                </value>
+                <value>
+                    <fullName>Not interested</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Not interested</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Stopped at agreement for T&amp;C / Refer</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Stopped at agreement for T&amp;C / Refer</label>
+                </value>
+                <value>
+                    <fullName>Unable to consult</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Unable to consult</label>
+                </value>
+                <value>
+                    <fullName>Unable to contact</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Unable to contact</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Opt_In_Referred_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Date Potential Participant opted into being referred</inlineHelpText>
+        <label>Opt-In Referred Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Opt_In_Referred__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Does the Potential Participant opt-in to allow being referred to the Principal Investigator associated with the Site selected earlier?</inlineHelpText>
+        <label>Opt-In Referred</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Opt_In_T_C_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Date Potential Participant opted into the T&amp;Cs</inlineHelpText>
+        <label>Opt-In T&amp;C Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Opt_In_T_C__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Does the Potential Participant opt-in to the Terms and Conditions of clinical trial?</inlineHelpText>
+        <label>Opt-In T&amp;C</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>PI_Account__c</fullName>
+        <description>For Workflow Emails</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>PI Account</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PI_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>PI Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Participant Enrollments (PI)</relationshipLabel>
+        <relationshipName>Participant_Profile2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Participant_Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Participant Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Participant Enrollments (Participant Contact)</relationshipLabel>
+        <relationshipName>PE_Participant_Contacts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Participant_Enrollment_ID__c</fullName>
+        <displayFormat>ParticipantE-{000000}</displayFormat>
+        <externalId>false</externalId>
+        <label>Participant Enrollment ID</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>Participant_ID_randomized_ID__c</fullName>
+        <description>HCP/Physician Participant ID randomized ID</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>HCP/Physician Participant ID randomized ID</inlineHelpText>
+        <label>Participant ID (randomized ID)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Participant_Identified_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Date when HCP/3rd Party identifies Potential Participant</inlineHelpText>
+        <label>Participant Identified Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Participant_Key__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>Participant Key = Participant number + NCT number</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>Participant Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Participant_Name__c</fullName>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Participant Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Participant_Status_Last_Changed_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Participant Status Last Changed Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Participant_Status__c</fullName>
+        <description>HCP/Physician Participant Participant Status</description>
+        <externalId>false</externalId>
+        <inlineHelpText>HCP/Physician Participant Participant Status</inlineHelpText>
+        <label>Participant Status</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Referral Sent to PI</fullName>
+                    <default>false</default>
+                    <label>Referral Sent to PI</label>
+                </value>
+                <value>
+                    <fullName>Excluded from Referring</fullName>
+                    <default>false</default>
+                    <label>Excluded from Referring</label>
+                </value>
+                <value>
+                    <fullName>Referral Accepted</fullName>
+                    <default>false</default>
+                    <label>Referral Accepted</label>
+                </value>
+                <value>
+                    <fullName>Contact Successful</fullName>
+                    <default>false</default>
+                    <label>Contact Successful</label>
+                </value>
+                <value>
+                    <fullName>Eligibility Passed</fullName>
+                    <default>false</default>
+                    <label>Eligibility Passed</label>
+                </value>
+                <value>
+                    <fullName>Screening Complete</fullName>
+                    <default>false</default>
+                    <label>Screening Complete</label>
+                </value>
+                <value>
+                    <fullName>Enrollment Success</fullName>
+                    <default>false</default>
+                    <label>Enrollment Success</label>
+                </value>
+                <value>
+                    <fullName>Referral On Hold</fullName>
+                    <default>false</default>
+                    <label>Referral On Hold</label>
+                </value>
+                <value>
+                    <fullName>Contact Attempt In Progress</fullName>
+                    <default>false</default>
+                    <label>Contact Attempt In Progress</label>
+                </value>
+                <value>
+                    <fullName>Screening In Progress</fullName>
+                    <default>false</default>
+                    <label>Screening In Progress</label>
+                </value>
+                <value>
+                    <fullName>Referral Declined</fullName>
+                    <default>false</default>
+                    <label>Referral Declined</label>
+                </value>
+                <value>
+                    <fullName>Contact Failed</fullName>
+                    <default>false</default>
+                    <label>Contact Failed</label>
+                </value>
+                <value>
+                    <fullName>Eligibility Failed</fullName>
+                    <default>false</default>
+                    <label>Eligibility Failed</label>
+                </value>
+                <value>
+                    <fullName>Screening Failed</fullName>
+                    <default>false</default>
+                    <label>Screening Failed</label>
+                </value>
+                <value>
+                    <fullName>Enrollment Failed</fullName>
+                    <default>false</default>
+                    <label>Enrollment Failed</label>
+                </value>
+                <value>
+                    <fullName>Failed Referral</fullName>
+                    <default>false</default>
+                    <label>Failed Referral</label>
+                </value>
+                <value>
+                    <fullName>Failed Review</fullName>
+                    <default>false</default>
+                    <label>Failed Review</label>
+                </value>
+                <value>
+                    <fullName>Pending Referral</fullName>
+                    <default>false</default>
+                    <label>Pending Referral</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Participant_Surname__c</fullName>
+        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Participant Surname</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Participant__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Participant</label>
+        <referenceTo>Participant__c</referenceTo>
+        <relationshipLabel>Participant Enrollments</relationshipLabel>
+        <relationshipName>Participant_Profile</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pass_Chart_Review__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Chart review trying to identify Potential Participant.  Documented per potential participant?</inlineHelpText>
+        <label>Pass Chart Review</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Y_N_Unknown</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Patient_ID__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Patient ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pre_Eligibility_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the pre-eligibility screening questionnaire was completed</inlineHelpText>
+        <label>Pre-Eligibility Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Pre_Eligibility__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the Potential Participant pass the pre-eligibility screening questionnaire?</inlineHelpText>
+        <label>Pre-Eligibility</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Pre_screening_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Pre-screening Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pass</fullName>
+                    <default>false</default>
+                    <label>Pass</label>
+                </value>
+                <value>
+                    <fullName>Fail</fullName>
+                    <default>false</default>
+                    <label>Fail</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Not Required</fullName>
+                    <default>false</default>
+                    <label>Not Required</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Randomized_Date__c</fullName>
+        <description>HCP/Physician Participant Randomized Date</description>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>HCP/Physician Participant Randomized Date</inlineHelpText>
+        <label>Randomized (Date)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Randomized__c</fullName>
+        <externalId>false</externalId>
+        <label>Randomized</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Y_N_Unknown</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Referral_Completed_by__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Referral Completed by</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Participant Enrollments (Pre-Screening  Completed by)</relationshipLabel>
+        <relationshipName>Participant_Enrollments1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Referral_Completedby_Name__c</fullName>
+        <description>Referral Completed by</description>
+        <externalId>false</externalId>
+        <formula>Referral_Completed_by__r.FirstName &amp; &quot; &quot; &amp;
+Referral_Completed_by__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Referral Completed by</inlineHelpText>
+        <label>Referral Completed by</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Referral_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>Referral ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Referral_Source__c</fullName>
+        <description>HCP/Physician Participant Referral Source</description>
+        <externalId>false</externalId>
+        <inlineHelpText>HCP/Physician Participant Referral Source</inlineHelpText>
+        <label>Referral Source</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>true</sorted>
+                <value>
+                    <fullName>3rd_Party</fullName>
+                    <default>false</default>
+                    <label>3rd Party</label>
+                </value>
+                <value>
+                    <fullName>ACOE</fullName>
+                    <default>false</default>
+                    <label>ACOE</label>
+                </value>
+                <value>
+                    <fullName>Autocruitment</fullName>
+                    <default>false</default>
+                    <label>Autocruitment</label>
+                </value>
+                <value>
+                    <fullName>ePR</fullName>
+                    <default>false</default>
+                    <label>ePR</label>
+                </value>
+                <value>
+                    <fullName>HCP</fullName>
+                    <default>false</default>
+                    <label>HCP</label>
+                </value>
+                <value>
+                    <fullName>HCP Prescreen Log</fullName>
+                    <default>false</default>
+                    <label>HCP Prescreen Log</label>
+                </value>
+                <value>
+                    <fullName>Patient</fullName>
+                    <default>false</default>
+                    <label>Patient</label>
+                </value>
+                <value>
+                    <fullName>PI</fullName>
+                    <default>false</default>
+                    <label>PI</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Referred_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Date Potential Participant referred to a Site / PI</inlineHelpText>
+        <label>Referred Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Referred__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Has the Potential Participant been successfully referred to a Site / PI?</inlineHelpText>
+        <label>Referred</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Screening_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Date screening was completed</inlineHelpText>
+        <label>Screening Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Screening_ID__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Screening ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Screening__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the Potential Participant pass screening?</inlineHelpText>
+        <label>Screening</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Site_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <inlineHelpText>Date and time the site was selected</inlineHelpText>
+        <label>Site Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Site__c</fullName>
+        <externalId>false</externalId>
+        <formula>Study_Site__r.Site__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Site</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_Category__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(OR(
+ISPICKVAL(Participant_Status__c ,&apos;Identified&apos;),
+ISPICKVAL(Participant_Status__c ,&apos;Contacted&apos;),
+ISPICKVAL(Participant_Status__c ,&apos;Consulted&apos;),
+ISPICKVAL(Participant_Status__c ,&apos;Interested&apos;),
+ISPICKVAL(Participant_Status__c ,&apos;Pre-Eligibility&apos;),
+ISPICKVAL(Participant_Status__c ,&apos;Opt-In Refer&apos;)), 
+&apos;In Referral Process&apos;, 
+IF(OR(
+ISPICKVAL(Participant_Status__c ,&apos;Failed Referral&apos;),
+ISPICKVAL(Participant_Status__c ,&apos;Failed to Enroll&apos;)),
+&apos;Failed to Refer&apos;,
+IF(OR(
+ISPICKVAL(Participant_Status__c ,&apos;New Referral&apos;),
+ISPICKVAL(Participant_Status__c ,&apos;Eligible&apos;),
+ISPICKVAL(Participant_Status__c ,&apos;Visit Completed&apos;),
+ISPICKVAL(Participant_Status__c ,&apos;Informed Consent&apos;),
+ISPICKVAL(Participant_Status__c ,&apos;Screening&apos;)),
+&apos;In Enrollment Process&apos;,
+IF(OR(
+ISPICKVAL(Participant_Status__c ,&apos;Enrolled&apos;),
+ISPICKVAL(Participant_Status__c ,&apos;Randomized&apos;)),
+&apos;Enrolled&apos;, &apos;Other&apos;))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Study_Hub_Log__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Study Hub Log</label>
+        <referenceTo>Integration_Log__c</referenceTo>
+        <relationshipLabel>Study_Hub Integration Enrollments</relationshipLabel>
+        <relationshipName>Study_Hub_Integration_Enrollments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Study_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Study_Site__r.Clinical_Trial_Profile__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Study Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Study_Site__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Study Site</label>
+        <referenceTo>Study_Site__c</referenceTo>
+        <relationshipLabel>Participant Enrollments</relationshipLabel>
+        <relationshipName>Participant_Profile</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Study__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot;&amp;Study_Site__r.Clinical_Trial_Profile__c,   Study_Site__r.Clinical_Trial_Profile__r.Name )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Study</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Terms_and_Conditions_Accepted_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Terms and Conditions Accepted Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Visit_Completed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Did the Potential Participant show up to the scheduled visit?</inlineHelpText>
+        <label>Visit Completed</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>gclid__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>gclid</label>
+        <length>75</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>utm_campaign__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>utm-campaign</label>
+        <length>75</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>utm_content__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>utm-content</label>
+        <length>75</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>utm_medium__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>utm-medium</label>
+        <length>75</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>utm_source__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>utm-source</label>
+        <length>75</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>utm_term__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>utm-term</label>
+        <length>75</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>utmz__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>utmz</label>
+        <length>75</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Participant Enrollment</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Participant_Status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Participant__c</columns>
+        <columns>Participant_Name__c</columns>
+        <columns>Patient_ID__c</columns>
+        <columns>Referral_Source__c</columns>
+        <columns>Study_Site__c</columns>
+        <columns>Study__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Minus_Testing</fullName>
+        <columns>NAME</columns>
+        <columns>Participant_Status__c</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Participant__c</columns>
+        <columns>Participant_Name__c</columns>
+        <columns>Patient_ID__c</columns>
+        <columns>Referral_Source__c</columns>
+        <columns>Study_Site__c</columns>
+        <columns>Study__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Clinical_Trial_Profile__c</field>
+            <operation>notEqual</operation>
+            <value>S-30368</value>
+        </filters>
+        <label>All Minus Testing</label>
+    </listViews>
+    <listViews>
+        <fullName>Participants_by_Stage</fullName>
+        <columns>NAME</columns>
+        <columns>Referral_Source__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Participants by Stage</label>
+    </listViews>
+    <nameField>
+        <displayFormat>REFERRALID{00000}</displayFormat>
+        <label>Participant Profile Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Participant Enrollments</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>HCP_On_Hold</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( INCLUDES(  HCP__r.HCP_Referral_Source__c , &quot;On Hold&quot;), (ISPICKVAL(Referral_Source__c, &quot;ePR&quot;)= FALSE))</errorConditionFormula>
+        <errorMessage>HCP is currently On Hold</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Study_On_Hold</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND( ISPICKVAL( Study_Site__r.Clinical_Trial_Profile__r.Override_Recruitment_Status__c , &quot;On Hold&quot;), (ISPICKVAL(Referral_Source__c, &quot;ePR&quot;)= FALSE))</errorConditionFormula>
+        <errorMessage>Study is On Hold</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Study_Site_On_Hold</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND( ISPICKVAL(Study_Site__r.Override_Study_Site_Recruitment_Status__c, &quot;On Hold&quot;), (ISPICKVAL(Referral_Source__c, &quot;ePR&quot;)= FALSE))</errorConditionFormula>
+        <errorMessage>Study Site is On Hold, please select an active Study Site</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

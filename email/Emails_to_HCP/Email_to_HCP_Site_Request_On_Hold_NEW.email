@@ -1,0 +1,34 @@
+<div style="max-width: 600px; background-color: #F3F3F3;padding: 20px; font-family: Arial;">
+        <div style="margin: auto; margin-top: 20px; background: #FFFFFF;  ">
+           <div style="background-color: #250056; color: #FFFFFF; padding: 20px;">
+                <div style="font-size: 18px; line-height: 21px;">Your request has been put on hold</div>
+                <div style="font-size: 24px; font-weight: bold;	line-height: 28px;">IQVIA™ Referral Hub </div>
+            </div>
+            <div style="padding: 20px; color: #333333; font-size: 16px; line-height: 20px;">
+Dear  {!Contact.Salutation} {!Contact.Name},
+<br/>
+<br/>
+This email is to inform you that your request to become a referring provider for  {!HCP_Enrollment__c.00N1I00000MHRDr} {!HCP_Enrollment__c.00N1I00000MHRDq} at {!HCP_Enrollment__c.Study_Site__c} has been placed on hold.  
+<br/>
+<br/>
+Someone from IQVIA may contact you to discuss further options.
+                  <br/><br/>
+              Thank you for your interest in participating in the IQVIA™ Referral Hub.
+                  <br/><br/>
+                    Sincerely,
+                    <br/>
+                    <br/>
+The IQVIA Referral Hub Support Team 
+                        </div>
+        </div>
+
+        <div style="padding-top:30px; padding-bottom:30px; text-align: center;">
+   <img src=" {!$Label.CommunityEmailLogo} "/>
+        </div>
+        <div style="color: #999999; font-size: 13px; line-height: 16px;">
+            <div style="border-top: 2px solid #CCCCCC; border-bottom: 2px solid #CCCCCC; padding-top: 10px; padding-bottom: 10px;">
+                IQVIA, 4820 Emperor Blvd, Durham, North Carolina 27703, USA |&nbsp;<a href="{!$Label.CommunityURL + '/s/privacy-policy'}">Privacy Policy</a>
+            </div>
+        </div>
+
+    </div>

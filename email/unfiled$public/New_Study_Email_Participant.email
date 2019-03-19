@@ -1,0 +1,30 @@
+<messaging:emailTemplate subject="You have been referred to a clinical research study - IQVIA™ Referral Hub" recipientType="User" relatedToType="Participant_Enrollment__c">
+<messaging:htmlEmailBody >
+
+    <c:EmailTemplate userName="{!relatedTo.Participant__r.First_Name__c} {!relatedTo.Participant__r.Last_Name__c}" 
+    header="You have been referred to a clinical research study">
+
+        <apex:outputPanel rendered="{!relatedTo.HCP__c == null}">
+            Thank you for your interest in the {!relatedTo.Study_Site__r.Clinical_Trial_Profile__r.Study_Title__c}.<br/>
+            You will be contacted by the Principal Investigator’s site regarding next steps in the enrollment process.
+            <br/><br/>
+            To see additional information on this study, please access “My Studies” using the link provided.
+        </apex:outputPanel>
+
+        <apex:outputPanel rendered="{!relatedTo.HCP__c != null}">
+            Recently, {!relatedTo.HCP__r.HCP_Contact__r.Name} made a referral on your behalf to 
+            {!relatedTo.Study_Site__r.Principal_Investigator__r.Name}  to potentially participate in a clinical research study: 
+            {!relatedTo.Study_Site__r.Clinical_Trial_Profile__r.Study_Title__c}.
+            <br/><br/>
+            You will be contacted by the Principal Investigator’s site, {!relatedTo.Study_Site__c}, 
+            regarding the next steps in the enrollment process.
+            <br/><br/>
+            To see additional information about this study, please log in to the platform, and then go to “My Studies.” 
+        </apex:outputPanel>
+
+        <c:EmailActionBtn buttonLabel="View Study Details"/>
+
+    </c:EmailTemplate>
+
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

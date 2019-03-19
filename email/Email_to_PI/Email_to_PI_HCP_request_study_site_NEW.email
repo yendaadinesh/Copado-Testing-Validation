@@ -1,0 +1,43 @@
+<div style="max-width: 600px; background-color: #F3F3F3;padding: 20px; font-family: Arial;">
+        <div style="margin: auto; margin-top: 20px; background: #FFFFFF;  ">
+           <div style="background-color: #250056; color: #FFFFFF; padding: 20px;">
+                <div style="font-size: 18px; line-height: 21px;">Please review and respond to referring provider request </div>
+                <div style="font-size: 24px; font-weight: bold;	line-height: 28px;">IQVIA™ Referral Hub </div>
+            </div>
+            <div style="padding: 20px; color: #333333; font-size: 16px; line-height: 20px;">
+
+             Dear {!HCP_Enrollment__c.00N1I00000MHRDr} {!HCP_Enrollment__c.00N1I00000MHRDq},
+     <br/><br/>
+{!HCP_Enrollment__c.HCP_Contact_Salutation__c} {!HCP_Enrollment__c.HCP_Contact__c}  at {!HCP_Enrollment__c.Study_Site__c} is requesting to become a referring healthcare provider for the clinical research study: {!HCP_Enrollment__c.00N1I00000MHRDt}.
+     <br/><br/>
+To accept this request, please log in to the IQVIA™ Referral Hub and navigate to "My Referring Clinics."
+       <div style="margin-top: 20px; margin-bottom: 30px;">
+                    <a href={!$Label.CommunityURL + '/s/my-referring-clinics'}
+                                     style="border-radius: 4px; background: #297DFD; color: #FFFFFF; padding: 9px 16px;
+                                            border: 1px; font-size: 14px; letter-spacing: 0; line-height: 20px;
+                                            user-select: none; cursor: pointer; min-width: 100px; text-decoration: none;
+                                            box-shadow: 0 8px 10px 0 rgba(0,0,0,0.1), 0 8px 20px 0 rgba(41,125,253,0.4);">
+                       View My Referring Clinics
+                    </a>
+                </div>
+                <div>
+                                  Thank you for your interest in participating in the IQVIA™ Referral Hub.
+                  <br/><br/>
+                    Sincerely,
+                    <br/>
+                    <br/>
+The IQVIA Referral Hub Support Team 
+                </div>
+            </div>
+        </div>
+
+        <div style="padding-top:30px; padding-bottom:30px; text-align: center;">
+   <img src=" {!$Label.CommunityEmailLogo} "/>
+        </div>
+        <div style="color: #999999; font-size: 13px; line-height: 16px;">
+            <div style="border-top: 2px solid #CCCCCC; border-bottom: 2px solid #CCCCCC; padding-top: 10px; padding-bottom: 10px;">
+                IQVIA, 4820 Emperor Blvd, Durham, North Carolina 27703, USA |&nbsp;<a href="{!$Label.CommunityURL + '/s/privacy-policy'}">Privacy Policy</a>
+            </div>
+        </div>
+
+    </div>

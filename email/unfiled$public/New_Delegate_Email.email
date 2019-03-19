@@ -1,0 +1,17 @@
+<messaging:emailTemplate subject="Your access level has been changed"
+                         recipientType="Contact" relatedToType="Contact">
+    <messaging:htmlEmailBody >
+
+
+        <c:EmailTemplateDelegate rendered="{!recipient.UserCommunityIsDelegate__c}" dContactId="{!recipient.Id}" dUserMode="{!recipient.userCommunityMode__c}"
+                                    buttonURL="" header="Your access level has been changed">
+            One or more of your Referral Hub study permissions have changed.  These are your current permissions:
+        </c:EmailTemplateDelegate>
+
+
+    </messaging:htmlEmailBody>
+
+    <messaging:plainTextEmailBody >
+        It looks like you browser is blocking HTML for this email. Please, enable HTML to view the content.
+    </messaging:plainTextEmailBody>
+</messaging:emailTemplate>

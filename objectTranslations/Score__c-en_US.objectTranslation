@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Score</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Scores</value>
+    </caseValues>
+    <fields>
+        <help><!-- HCT Number --></help>
+        <label><!-- Clinical Trial Profile --></label>
+        <name>Clinical_Trial_Profile__c</name>
+        <relationshipLabel><!-- Scores --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HCP Contact --></label>
+        <name>HCP_Contact__c</name>
+        <relationshipLabel><!-- Scores --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PI Override Status --></label>
+        <name>PI_Override_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- PI --></label>
+        <name>PI__c</name>
+        <relationshipLabel><!-- Scores (PI) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Relative  Score- how good of a referrer is the HCP? How good of a site member is the PI? --></help>
+        <label><!-- Relative Score --></label>
+        <name>Relative_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Study Site --></label>
+        <name>Study_Site__c</name>
+        <relationshipLabel><!-- Scores --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>PI receives email that a Ref HCP requests the PI&apos;s study site to be one of their referring sites for a study</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Email to PI- HCP request study site NEW</name>
+    <style>none</style>
+    <subject>A new provider wants to refer patients to you</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

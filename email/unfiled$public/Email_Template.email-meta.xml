@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Email Template</name>
+    <style>none</style>
+    <subject>Welcome to the IQVIA™ Clinical Research Collaboration Platform Community</subject>
+    <textOnly>Thank you for your interest in using the
+IQVIA™ Clinical Research Collaboration Platform
+Dear [Name]
+
+[TEXT]
+View Study Details
+Sincerely,
+
+The IQVIA™ Clinical Research Collaboration Platform Support Team
+IQVIA, 4820 Emperor Blvd, Durham, North Carolina 27703, USA | Privacy Policy</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

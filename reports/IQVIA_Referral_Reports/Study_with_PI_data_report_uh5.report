@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$LastName</field>
+    </columns>
+    <columns>
+        <field>Contact.Study_Site__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Study_Site__r$Override_PI_Referral_Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Contact.Study_Site__r$Clinical_Trial_Profile__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>S-15610</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Study with PI data report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Study_Sites_with_PIs__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Contact$Birthdate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

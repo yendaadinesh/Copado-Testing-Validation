@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Tracking Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Tracking Information</value>
+    </caseValues>
+    <fields>
+        <label><!-- Clinical Trial Profile --></label>
+        <name>Clinical_Trial_Profile__c</name>
+        <relationshipLabel><!-- Tracking Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Description for Current Other Outcome measures --></help>
+        <label><!-- Current Other Outcome Measures --></label>
+        <name>Current_Other_Outcome_Measures__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description for Current Primary Outcome Measures --></help>
+        <label><!-- Current Primary Outcome Measures --></label>
+        <name>Current_Primary_Outcome_Measures__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description for Current Secondary Outcome measures. --></help>
+        <label><!-- Current Secondary Outcome Measures --></label>
+        <name>Current_Secondary_Outcome_Measures__c</name>
+    </fields>
+    <fields>
+        <help><!-- Final Data Collection Date for Primary Outcome Measures --></help>
+        <label><!-- Estimated Primary Completion Date --></label>
+        <name>Estimated_Primary_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- MD5 --></label>
+        <name>MD5__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description for Original Other Outcome measures. --></help>
+        <label><!-- Original Other Outcome Measures --></label>
+        <name>Original_Other_Outcome_Measures__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description for Original Primary Outcome Measures --></help>
+        <label><!-- Original Primary Outcome Measures --></label>
+        <name>Original_Primary_Outcome_Measures__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description for Original Secondary Outcome Measures. --></help>
+        <label><!-- Original Secondary Outcome Measures --></label>
+        <name>Original_Secondary_Outcome_Measures__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Completion Date --></label>
+        <name>Outcome_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Measure --></label>
+        <name>Outcome_Measure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outcome Type --></label>
+        <name>Outcome_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Key (External Use) --></label>
+        <name>Primary_Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- Study Start Date --></help>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

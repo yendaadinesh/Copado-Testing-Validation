@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Study ID</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Study IDs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Clinical Trial Profile --></label>
+        <name>Clinical_Trial_Profile__c</name>
+        <relationshipLabel><!-- Study IDs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ID Type --></label>
+        <name>ID_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Key (External Use) --></label>
+        <name>Primary_Key__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

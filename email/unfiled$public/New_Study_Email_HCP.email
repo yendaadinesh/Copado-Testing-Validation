@@ -1,0 +1,14 @@
+<messaging:emailTemplate subject="A new clinical research study is available" recipientType="Contact" relatedToType="HCP_Enrollment__c">
+<messaging:htmlEmailBody >
+
+    <c:EmailTemplate userName="{!recipient.Name}" header="Review and accept a new study">
+        A new clinical research study has been added to your account on the IQVIA Referral Hub.  
+        <br/>
+        <br/>
+        Please take a moment to log in to Referral Hub, access "My Studies," and review and accept this study. You will then be able to easily connect with study sites and begin referring patients through Referral Hub.
+
+        <c:EmailActionBtn buttonLabel="View My Studies"/>
+    </c:EmailTemplate>
+
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Score__c.Relative_Score__c</field>
+    </columns>
+    <columns>
+        <field>Score__c.Study_Site__c</field>
+    </columns>
+    <columns>
+        <field>Score__c.Clinical_Trial_Profile__c</field>
+    </columns>
+    <columns>
+        <field>Score__c.PI__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Contact.Full_Name__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Score__c.PI_Override_Status__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Accepted</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>HCP by Score</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Score__c@Score__c.HCP_Contact__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>PI receives email that they have a new patient referral</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Email to PI- Patient Referral NEW</name>
+    <style>none</style>
+    <subject>New patient referral</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

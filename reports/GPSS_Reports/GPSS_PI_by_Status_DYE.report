@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.Study_Site__r$Billable_Code_CRM_Number__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Study_Site__r$Protocol_ID__c</field>
+    </columns>
+    <columns>
+        <field>Contact$LastName</field>
+    </columns>
+    <columns>
+        <field>Contact$FirstName</field>
+    </columns>
+    <columns>
+        <field>Contact.Study_Site__r$Study_Site_Number__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Study_Site__r$Name</field>
+    </columns>
+    <columns>
+        <field>Contact.Study_Site__r$Override_PI_Referral_Status__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>GPSS - PI by Status</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Study_Sites_with_PIs__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Contact.Study_Site__r$Billable_Code_CRM_Number__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

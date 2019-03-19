@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Study Site --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Study Site --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Agrees to Referral Reimbursement --></label>
+        <name>Agrees_to_Referral_Reimbursement__c</name>
+    </fields>
+    <fields>
+        <help><!-- HCP/Physician Billable Code CRM Number --></help>
+        <label><!-- Billable Code (CRM Number) --></label>
+        <name>Billable_Code_CRM_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Trial&apos;s HCP/Physician Chart Review Amount --></help>
+        <label><!-- Chart Review --></label>
+        <name>Chart_Review__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cleaned Study Key --></label>
+        <name>Cleaned_Study_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clinical Trial Profile --></label>
+        <name>Clinical_Trial_Profile__c</name>
+        <relationshipLabel><!-- Study Sites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Enrollment Actual --></label>
+        <name>Enrollment_Actual__c</name>
+    </fields>
+    <fields>
+        <help><!-- Actual- Target --></help>
+        <label><!-- Enrollment Actual to Target --></label>
+        <name>Enrollment_Actual_to_Target__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Enrollment End Date --></label>
+        <name>Enrollment_End_Date2__c</name>
+    </fields>
+    <fields>
+        <help><!-- HCP/Physician Enrollment End Date --></help>
+        <label><!-- Enrollment End Date --></label>
+        <name>Enrollment_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trial Enrollment Start Date --></label>
+        <name>Enrollment_Start_Date2__c</name>
+    </fields>
+    <fields>
+        <help><!-- HCP/Physician Enrollment Start Date --></help>
+        <label><!-- Enrollment Start Date --></label>
+        <name>Enrollment_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enrollment Target --></label>
+        <name>Enrollment_Target__c</name>
+    </fields>
+    <fields>
+        <help><!-- Trial&apos;s HCP/Physician HCP Contacted Potential Participant Amount --></help>
+        <label><!-- HCP Contacted Potential Participant --></label>
+        <name>HCP_Contacted_Potential_Participant__c</name>
+    </fields>
+    <fields>
+        <label><!-- Virtual Study Site --></label>
+        <name>Is_Virtual_Study_Site__c</name>
+    </fields>
+    <fields>
+        <help><!-- Trial&apos;s HCP/Physician Orientation Amount --></help>
+        <label><!-- Orientation --></label>
+        <name>Orientation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override PI Referral Status --></label>
+        <name>Override_PI_Referral_Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation>PicklistValue.Study_Site__c.Override_PI_Referral_Status.Accepted</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accepted (Admin)</masterLabel>
+            <translation>Aceptado (administrador)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deactivated (Admin)</masterLabel>
+            <translation>Desactivado (administrador)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Declined (Acceptance)</masterLabel>
+            <translation>Rechazado (aceptación)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invitation Sent</masterLabel>
+            <translation>Invitación enviada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Responsive (Admin)</masterLabel>
+            <translation>Sin respuesta (administrador)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation>En espera</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold (Admin)</masterLabel>
+            <translation>En espera (administrador)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Override Status Updated By --></label>
+        <name>Override_Status_Updated_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Study Site Recruitment Status --></label>
+        <name>Override_Study_Site_Recruitment_Status__c</name>
+        <picklistValues>
+            <masterLabel>Actively Enrolling</masterLabel>
+            <translation>Inscripción activa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrollment Closed</masterLabel>
+            <translation>Inscripción cerrada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Longer Enrolling</masterLabel>
+            <translation>Ya no está inscribiendo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation>En espera</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PI cannot accept referrals based on Site status</masterLabel>
+            <translation>El IP ya no puede aceptar referenciamientos debido al estado del centro</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PI Contact --></label>
+        <name>PI_Contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- HCP/Physician Sponsor Pays for Referral Activity Y N --></help>
+        <label><!-- PI Pays for Referral Activity --></label>
+        <name>PI_Pays_for_Referral_Activity__c</name>
+    </fields>
+    <fields>
+        <help><!-- Reasons why PI suspends enrollment for a clinical trial --></help>
+        <label><!-- PI Status Reason --></label>
+        <name>PI_Status_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Otro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsor Hold</masterLabel>
+            <translation>Espera del patrocinador</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supply/resupply of Study Materials (Lab Kits)</masterLabel>
+            <translation>Suministro/nuevo suministro de materiales del estudio (maletines de laboratorio)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supply/resupply of investigational product</masterLabel>
+            <translation>Suministro/nuevo suministro del producto en fase de investigación</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Trial&apos;s HCP/Physician Prescreen Amount --></help>
+        <label><!-- Prescreen --></label>
+        <name>Prescreen__c</name>
+    </fields>
+    <fields>
+        <help><!-- STDY_SITE_KEY + INVSTGR_KEY --></help>
+        <label><!-- Primary Key --></label>
+        <name>Primary_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Key ePR --></label>
+        <name>Primary_Key_ePR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Principal Investigator --></label>
+        <name>Principal_Investigator__c</name>
+        <relationshipLabel><!-- PI&apos;s Study Sites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Code --></label>
+        <name>Project_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Protocol Country Id --></label>
+        <name>Protocol_Country_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- Clinical Trial Profile&apos;s Protocol Id --></help>
+        <label><!-- Protocol ID --></label>
+        <name>Protocol_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Radius Type --></label>
+        <name>Radius_Type__c</name>
+        <picklistValues>
+            <masterLabel>Kilometers</masterLabel>
+            <translation><!-- Kilometers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miles</masterLabel>
+            <translation><!-- Miles --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- How far will we allow an HCP to search for a participating PI --></help>
+        <label><!-- Radius for Participation --></label>
+        <name>Radius_for_Participation__c</name>
+    </fields>
+    <fields>
+        <label><!-- CTMS Recruitment Status --></label>
+        <name>Recruitment_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved for Site Selection Visit</masterLabel>
+            <translation><!-- Approved for Site Selection Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Back-Up</masterLabel>
+            <translation><!-- Back-Up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Conditional Selected</masterLabel>
+            <translation><!-- Conditional Selected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacted (Feasibility)</masterLabel>
+            <translation><!-- Contacted (Feasibility) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacted (Site ID)</masterLabel>
+            <translation><!-- Contacted (Site ID) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dropped</masterLabel>
+            <translation><!-- Dropped --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrollment Closed</masterLabel>
+            <translation><!-- Enrollment Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrollment On-Hold</masterLabel>
+            <translation><!-- Enrollment On-Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrollment Open</masterLabel>
+            <translation><!-- Enrollment Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Essential Documents in place</masterLabel>
+            <translation><!-- Essential Documents in place --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initiated</masterLabel>
+            <translation><!-- Initiated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interested (Feasibility)</masterLabel>
+            <translation><!-- Interested (Feasibility) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interested (Site ID)</masterLabel>
+            <translation><!-- Interested (Site ID) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Responder (Feasibility)</masterLabel>
+            <translation><!-- Non-Responder (Feasibility) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Responder (Site ID)</masterLabel>
+            <translation><!-- Non-Responder (Site ID) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Interested (Feasibility)</masterLabel>
+            <translation><!-- Not Interested (Feasibility) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Interested (Site ID)</masterLabel>
+            <translation><!-- Not Interested (Site ID) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Selected</masterLabel>
+            <translation><!-- Not Selected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Null</masterLabel>
+            <translation><!-- Null --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Permanently Closed</masterLabel>
+            <translation><!-- Permanently Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Selected</masterLabel>
+            <translation><!-- Pre-Selected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prematurely Closed</masterLabel>
+            <translation><!-- Prematurely Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Initiation</masterLabel>
+            <translation><!-- Ready for Initiation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulatory Green Light</masterLabel>
+            <translation><!-- Regulatory Green Light --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regulatory Initiation</masterLabel>
+            <translation><!-- Regulatory Initiation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected for Site Selection Visit</masterLabel>
+            <translation><!-- Rejected for Site Selection Visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selected</masterLabel>
+            <translation><!-- Selected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Targeted</masterLabel>
+            <translation><!-- Targeted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure (Feasibility)</masterLabel>
+            <translation><!-- Unsure (Feasibility) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Trial&apos;s HCP/Physician Referral Amount --></help>
+        <label><!-- Referral --></label>
+        <name>Referral__c</name>
+    </fields>
+    <fields>
+        <label><!-- SPNL LN (assignment) --></label>
+        <name>SPNL_LN_assignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site --></label>
+        <name>Site_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site --></label>
+        <name>Site__c</name>
+        <relationshipLabel><!-- Study Sites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sponsor Pays for Referral Activity --></label>
+        <name>Sponsor_Pays_for_Referral_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Study Site Full Name --></label>
+        <name>Study_Site_Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Study Site Key --></label>
+        <name>Study_Site_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Study Site Number --></label>
+        <name>Study_Site_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Phone number referenced in the email for Virtual Trial Participants --></help>
+        <label><!-- Study Site Phone --></label>
+        <name>Study_Site_Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Reason for Pausing Studies --></help>
+        <label><!-- Study Site Status Reason --></label>
+        <name>Study_Site_Status_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Sponsor Initiated Hold</masterLabel>
+            <translation><!-- Sponsor Initiated Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supply/Resupply of Investigational Product</masterLabel>
+            <translation><!-- Supply/Resupply of Investigational Product --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supply/Resupply of Supplies/Materials (i.e., Lab Kits)</masterLabel>
+            <translation><!-- Supply/Resupply of Supplies/Materials (i.e., Lab Kits) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If checked, no emails will be sent to participants for this study site. --></help>
+        <label><!-- Suppress Participant Emails --></label>
+        <name>Suppress_Participant_Emails__c</name>
+    </fields>
+    <gender><!-- Feminine --></gender>
+    <nameFieldLabel><!-- Study Site Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- This Override PI Recruitment Status value cannot be changed --></errorMessage>
+        <name>PI_Hold</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This Override Study Site Recruitment Status value cannot be changed --></errorMessage>
+        <name>Site_On_Hold</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enrollment End Date can&apos;t happen before Enrolment Start Date --></errorMessage>
+        <name>Start_End_enrolment_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- This Override Study Site Recruitment Status value cannot be changed --></errorMessage>
+        <name>Study_Site_Status_Freeze</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Drug Usage</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Drug Usage</value>
+    </caseValues>
+    <fields>
+        <label><!-- Clinical Trial Profile --></label>
+        <name>Clinical_Trial_Profile__c</name>
+        <relationshipLabel><!-- Drug Usage --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Medication and Treatment that the patient is currently on --></help>
+        <label><!-- Concomitant Therapies --></label>
+        <name>Concomitant_Therapies__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dose --></label>
+        <name>Dose__c</name>
+    </fields>
+    <fields>
+        <help><!-- First Patient In to Last Patient Out --></help>
+        <label><!-- Duration --></label>
+        <name>Duration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pharmacy Prescription Fill Data --></help>
+        <label><!-- Fill Data --></label>
+        <name>Fill_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intervention Type --></label>
+        <name>Intervention_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Key (External Use) --></label>
+        <name>Primary_Key__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

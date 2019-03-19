@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account Name 2 --></label>
+        <name>Account_Name_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facility Classification --></label>
+        <name>Facility_Classification__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facility Type Description --></label>
+        <name>Facility_Type_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facility Type --></label>
+        <name>Facility_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- OneKey Code --></label>
+        <name>OneKey_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Org Key --></label>
+        <name>Org_Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this account is flagged for Privacy Law regulations. --></help>
+        <label><!-- Is Privacy Law Enabled --></label>
+        <name>QIDC__OK_MDM_Is_Privacy_Law_Enabled_IMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- OneKeyId --></label>
+        <name>QIDC__OneKeyId_IMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent OneKey ID --></label>
+        <name>QIDC__ParentOneKeyID_IMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sponsor Type --></label>
+        <name>Sponsor_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tax ID --></label>
+        <name>Tax_ID__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Represent a business or organization with contacts --></description>
+        <label><!-- Business Account --></label>
+        <name>Business_Account</name>
+    </recordTypes>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Clinical Trial Profile</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Clinical Trial Profiles</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Fields To Translate --></label>
+        <name>FieldsToTranslate</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Age Criteria --></help>
+        <label><!-- Age --></label>
+        <name>Age__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should map to the &quot;Brief Summary&quot; field in clinicaltrials.gov --></help>
+        <label><!-- Brief Summary --></label>
+        <name>Brief_Summary__c</name>
+    </fields>
+    <fields>
+        <help><!-- HCP/Physician Chart Review Amount --></help>
+        <label><!-- Chart Review --></label>
+        <name>Chart_Review__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should map to the URL of the study within clinicaltrials.gov. It should end at the NCT ID and not have any additional search parameters suffixed. --></help>
+        <label><!-- ClinicalTrials.gov URL --></label>
+        <name>ClinicalTrials_gov_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Other conditions &amp; diseases that the patient currently has --></help>
+        <label><!-- Co-morbidity --></label>
+        <name>Co_morbidity__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should map to the &quot;Condition&quot; field in clinicaltrials.gov --></help>
+        <label><!-- Condition(s) Therapeutic Area --></label>
+        <name>Condition_s_Therapeutic_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currency for Below Amounts --></label>
+        <name>Currency_for_Below_Amounts__c</name>
+        <picklistValues>
+            <masterLabel>EUR</masterLabel>
+            <translation><!-- EUR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GBP</masterLabel>
+            <translation><!-- GBP --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USD</masterLabel>
+            <translation><!-- USD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Demographics of patient profile --></help>
+        <label><!-- Demographic --></label>
+        <name>Demographic__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should map to the &quot;Detailed Description&quot; field in clinicaltrials.gov --></help>
+        <label><!-- Detailed Description --></label>
+        <name>Detailed_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- ICD-9 and 10 codes or may just list diagnosis --></help>
+        <label><!-- Diagnosis --></label>
+        <name>Diagnosis__c</name>
+    </fields>
+    <fields>
+        <help><!-- Examples include Demographic, Age, Gender, Medication History, Formulary, Diagnosis, Co-morbidity, ICD 9/10 Code, etc. --></help>
+        <label><!-- Eligibility Criteria --></label>
+        <name>Eligibility_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enrolled End Date --></label>
+        <name>Enrolled_End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Entered by SPNL when setting up Clinical Study obtained from the Clinical team. This should be updated at a regular cadence to identify if we need to continue to use CRCP for a study --></help>
+        <label><!-- Enrollment Actual --></label>
+        <name>Enrollment_Actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enrollment Start Date --></label>
+        <name>Enrollment_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should map to the &quot;Estimated Enrollment&quot; field in clinicaltrials.gov. --></help>
+        <label><!-- Enrollment Target --></label>
+        <name>Enrollment_Target__c</name>
+    </fields>
+    <fields>
+        <help><!-- Estimated recruitment completion date. --></help>
+        <label><!-- Estimated Completion Date --></label>
+        <name>Estimated_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Estimated number of participants in a clinical study. --></help>
+        <label><!-- Estimated Enrollment --></label>
+        <name>Estimated_Enrollment__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date Final data collection date for primary outcome measure. --></help>
+        <label><!-- Estimated Primary Completion Date --></label>
+        <name>Estimated_Primary_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Start Date --></label>
+        <name>Estimated_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Formulary for the drug --></help>
+        <label><!-- Formulary --></label>
+        <name>Formulary__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sexes Eligible for Study. --></help>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+    </fields>
+    <fields>
+        <help><!-- HCP/Physician HCP Contacted Potential Participant Amount --></help>
+        <label><!-- HCP Contacted Potential Participant --></label>
+        <name>HCP_Contacted_Potential_Participant__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should map to the &quot;Has Data Monitoring Committee&quot; field in clinicaltrials.gov --></help>
+        <label><!-- Has Data Monitoring Committee --></label>
+        <name>Has_Data_Monitoring_Committee__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should map to the &quot;Intervention&quot; field in clinicaltrials.gov --></help>
+        <label><!-- Interventions --></label>
+        <name>Interventions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Smoking, alcohol, etc. --></help>
+        <label><!-- Lifestyle --></label>
+        <name>Lifestyle__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique URL generated by Survey Gizmo created by SPNL in collaboration with IQVIA Digital Media.  This field must be populated if the study requires medical record review. --></help>
+        <label><!-- Link to Medical Record Review --></label>
+        <name>Link_to_Medical_Record_Review__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique URL generated by Survey Gizmo created by SPNL in collaboration with IQVIA Digital Media.  This field must be populated if the study requires pre-screening. --></help>
+        <label><!-- Link to Pre-screening --></label>
+        <name>Link_to_Pre_screening__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Cluster ID --></label>
+        <name>MDM_Cluster_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Prescreen Log CAP per PI --></label>
+        <name>Max_Prescreen_Log_CAP_per_PI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Prescreen Log CAP per Study --></label>
+        <name>Max_Prescreen_Log_CAP_per_Study__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Referral CAP Per PI --></label>
+        <name>Max_Referral_CAP_Per_PI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Referral CAP Per Study --></label>
+        <name>Max_Referral_CAP_Per_Study__c</name>
+    </fields>
+    <fields>
+        <help><!-- Patient medical history. --></help>
+        <label><!-- Medication History --></label>
+        <name>Medication_History__c</name>
+    </fields>
+    <fields>
+        <help><!-- A unique identification code given to each clinical study registered on ClinicalTrials.gov. The format is &quot;NCT&quot; followed by an 8-digit number --></help>
+        <label><!-- NCT Number --></label>
+        <name>NCT_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should map to the &quot;Official Title&quot; field in clinicaltrials.gov --></help>
+        <label><!-- Official Title --></label>
+        <name>Official_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Orientation Required --></label>
+        <name>Orientation_Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- HCP/Physician Orientation Amount --></help>
+        <label><!-- Orientation --></label>
+        <name>Orientation__c</name>
+    </fields>
+    <fields>
+        <help><!-- If populated, this will be the description seen within the community by PIs, HCPs, Participants, etc. describing the clinical study.  This will &quot;override&quot; display of the &quot;Detailed Description&quot; if &quot;Override Description&quot; is populated. --></help>
+        <label><!-- Override Description --></label>
+        <name>Override_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Exclusion Criteria --></label>
+        <name>Override_Exclusion_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Inclusion Criteria --></label>
+        <name>Override_Inclusion_Criteria__c</name>
+    </fields>
+    <fields>
+        <help><!-- Ability for SPNL or Admins to override the recruiting status of a clinical study. --></help>
+        <label><!-- Override Recruitment Status --></label>
+        <name>Override_Recruitment_Status__c</name>
+        <picklistValues>
+            <masterLabel>Actively Enrolling</masterLabel>
+            <translation><!-- Actively Enrolling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrollment Closed</masterLabel>
+            <translation><!-- Enrollment Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Longer Enrolling</masterLabel>
+            <translation><!-- No Longer Enrolling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Populated via workflow rule when the Override Status field is changed. --></help>
+        <label><!-- Override Status Updated By --></label>
+        <name>Override_Status_Updated_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Participating in Digital Recruitment --></label>
+        <name>Participating_in_Digital_Recruitment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Participating in Rocket Referral --></label>
+        <name>Participating_in_Rocket_Referral__c</name>
+    </fields>
+    <fields>
+        <help><!-- HCP/Physician Prescreen Amount --></help>
+        <label><!-- Prescreen --></label>
+        <name>Prescreen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prescreen to Referral Ratio CAP per HCP --></label>
+        <name>Prescreen_to_Referral_Ratio_CAP_per_HCP__c</name>
+    </fields>
+    <fields>
+        <help><!-- Protocol ID = Protocol Number. This is a unique number assigned by the sponsor providing a standard way to identify the study.  Obtain the protocol number from the Project Lead, Clinical Lead, Patient Recruitment Lead, or Site and Patient Networks Lead. --></help>
+        <label><!-- Protocol ID --></label>
+        <name>Protocol_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should map to the &quot;Publications&quot; field in clinicaltrials.gov --></help>
+        <label><!-- Publications --></label>
+        <name>Publications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Randomization --></label>
+        <name>Randomization__c</name>
+    </fields>
+    <fields>
+        <help><!-- field populated from Data Factory --></help>
+        <label><!-- CTMS Recruitment Status --></label>
+        <name>Recruitment_Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed Follow Up / In Analysis</masterLabel>
+            <translation><!-- Closed Follow Up / In Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discontinued</masterLabel>
+            <translation><!-- Discontinued --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrolling</masterLabel>
+            <translation><!-- Enrolling --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrollment Closed</masterLabel>
+            <translation><!-- Enrollment Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Development</masterLabel>
+            <translation><!-- In Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open to Enrollment</masterLabel>
+            <translation><!-- Open to Enrollment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning</masterLabel>
+            <translation><!-- Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proposed</masterLabel>
+            <translation><!-- Proposed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test</masterLabel>
+            <translation><!-- Test --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Referral Limit --></label>
+        <name>Referral_Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- HCP/Physician Referral Amount --></help>
+        <label><!-- Referral --></label>
+        <name>Referral__c</name>
+    </fields>
+    <fields>
+        <label><!-- Responsible Party Organization --></label>
+        <name>Responsible_Party_Organization__c</name>
+    </fields>
+    <fields>
+        <help><!-- Party responsible for submitting information about a clinical study to clinicaltrials.gov and updating that information --></help>
+        <label><!-- Responsible Party --></label>
+        <name>Responsible_Party__c</name>
+    </fields>
+    <fields>
+        <label><!-- Share URL --></label>
+        <name>Share_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sponsor Pays for Referral Activity --></help>
+        <label><!-- Sponsor Pays for Referral Activity --></label>
+        <name>Sponsor_Pays_for_Referral_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should map to the &quot;Study Arms&quot; field in clinicaltrials.gov --></help>
+        <label><!-- Study Arms --></label>
+        <name>Study_Arms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Study Code Name --></label>
+        <name>Study_Code_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should map to the &quot;Study Design&quot; field in clinicaltrials.gov --></help>
+        <label><!-- Study Design --></label>
+        <name>Study_Design__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should map to the &quot;Study Phase&quot; field in clinicaltrials.gov --></help>
+        <label><!-- Study Phase --></label>
+        <name>Study_Phase__c</name>
+    </fields>
+    <fields>
+        <label><!-- Study Source --></label>
+        <name>Study_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should map to the &quot;Study Sponsor&quot; field in clinicaltrials.gov --></help>
+        <label><!-- Study Sponsor --></label>
+        <name>Study_Sponsor__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should map to the &quot;Brief Title&quot; field in clinicaltrials.gov --></help>
+        <label><!-- Study Title --></label>
+        <name>Study_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should map to the &quot;Study Type&quot; field in clinicaltrials.gov --></help>
+        <label><!-- Study Type --></label>
+        <name>Study_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, no emails will be sent to participants for this study. --></help>
+        <label><!-- Suppress Participant Emails --></label>
+        <name>Suppress_Participant_Emails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Surveys Supported Languages --></label>
+        <name>Surveys_supported_Languages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terms And Conditions --></label>
+        <name>Terms_And_Conditions_ID__c</name>
+        <relationshipLabel><!-- Clinical Trial Profiles --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Terms and Conditions --></label>
+        <name>Terms_and_Conditions__c</name>
+    </fields>
+    <fields>
+        <label><!-- US FDA Regulated Product --></label>
+        <name>US_FDA_Regulated_Product__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field should map to the &quot;Verification Date&quot; field in clinicaltrials.gov.  If there is no day within clinicaltrials.gov, default the date to the 15th of the month. --></help>
+        <label><!-- Verification Date --></label>
+        <name>Verification_Date__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Only Status Field can be changed by Integration --></errorMessage>
+        <name>Prevent_Field_Updates_Integration</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SPNL can only change the value from &apos;Actively Enrolled&apos; to &apos;On Hold --></errorMessage>
+        <name>Recruitment_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enrollment End Date can&apos;t happen before Enrolment Start Date --></errorMessage>
+        <name>Start_End_enrollment_trial_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- NCT number should have a format &quot;NCT00000000&quot; --></errorMessage>
+        <name>Type_of_NCT_number</name>
+    </validationRules>
+</CustomObjectTranslation>

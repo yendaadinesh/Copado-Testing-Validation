@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Material Sent</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Materials Sent</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Materials Sent --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HCP Enrollment --></label>
+        <name>HCP_Enrollment__c</name>
+        <relationshipLabel><!-- Materials Sent --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>Lead__c</name>
+        <relationshipLabel><!-- Materials Sent --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Material Sent --></label>
+        <name>Material_Sent__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

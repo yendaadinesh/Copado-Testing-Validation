@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Patient receives email that Study Site has been placed on hold</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Email to Patient- Study site on hold</name>
+    <style>none</style>
+    <subject>Study site on hold</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

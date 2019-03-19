@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Participant Enrollment --></value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Participant Enrollment --></value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- ExportExcel --></label>
+        <name>ExportExcel</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Clinical Trial Profile --></label>
+        <name>Clinical_Trial_Profile__c</name>
+        <relationshipLabel><!-- Participant Enrollments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Date when the Potential Participant was consulted --></help>
+        <label><!-- Consulted Date --></label>
+        <name>Consulted_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Has the Potential Participant been consulted on the clinical trial? --></help>
+        <label><!-- Consulted --></label>
+        <name>Consulted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date when contact has been made with the Potential Participant --></help>
+        <label><!-- Contacted Date --></label>
+        <name>Contacted_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Has contact been made with the Potential Participant? --></help>
+        <label><!-- Contacted --></label>
+        <name>Contacted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date Potential Participant went through Eligible questions with PI --></help>
+        <label><!-- Eligible Date --></label>
+        <name>Eligible_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Opportunity for PI to ask more questions than was done in the Pre-eligilibity screening to confirm Potential Participant eligibility in a clinical trial --></help>
+        <label><!-- Eligible --></label>
+        <name>Eligible__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date enrollment completed --></help>
+        <label><!-- Enrolled Date --></label>
+        <name>Enrolled_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the Potential Participant get enrolled into the Clinical Trial --></help>
+        <label><!-- Enrolled --></label>
+        <name>Enrolled__c</name>
+    </fields>
+    <fields>
+        <label><!-- HCP Account --></label>
+        <name>HCP_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- HCP Contact --></label>
+        <name>HCP_Contact_HCPEnroll__c</name>
+        <relationshipLabel><!-- Participant Enrollments (HCP Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HCP Contact --></label>
+        <name>HCP_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- HCP --></label>
+        <name>HCP__c</name>
+        <relationshipLabel><!-- Participant Enrollments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Obtain the Interactive Voice Response System (IVRS) Number/ Interactive Web Response System (IWRS) Number for the  participant --></help>
+        <label><!-- IVRS/IWRS# --></label>
+        <name>IVRS_IWRS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date Informed Consent was provided --></help>
+        <label><!-- Informed Consent Date --></label>
+        <name>Informed_Consent_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the Potential Participant provide informed consent? --></help>
+        <label><!-- Informed Consent --></label>
+        <name>Informed_Consent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date when the Potential Participant identified interest --></help>
+        <label><!-- Interested Date --></label>
+        <name>Interested_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is the Potential Participant interested in participating in the clinical trial? --></help>
+        <label><!-- Interested --></label>
+        <name>Interested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Virtual Study Site --></label>
+        <name>Is_Virtual_Study_Site__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Status Changed Notes --></label>
+        <name>Last_Status_Changed_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical Record Review Completed Date --></label>
+        <name>Medical_Record_Review_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical Record Review Completed by --></label>
+        <name>Medical_Record_Review_Completed_by__c</name>
+        <relationshipLabel><!-- Participant Enrollments (Medical Record Review Completed by) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Medical Record Review Completed by --></help>
+        <label><!-- Medical Record Review Completed by --></label>
+        <name>Medical_Record_Review_Completedby_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Medical Record Review Status --></label>
+        <name>Medical_Record_Review_Status__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation>Desaprobar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Required</masterLabel>
+            <translation>No se requiere</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation>Aprobar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>Pendiente</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- After the Potential Participant reviews the list of available sites, if they do not like any, then they can select this and it ends the referral process. --></help>
+        <label><!-- No Suitable Site --></label>
+        <name>No_Suitable_Site__c</name>
+    </fields>
+    <fields>
+        <help><!-- Free form field to add in any additional comments concerning non-enrollment --></help>
+        <label><!-- Non-Enrollment Notes --></label>
+        <name>Non_Enrollment_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Enrollment Reason --></label>
+        <name>Non_Enrollment_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Declined Practitioner</masterLabel>
+            <translation>Médico rechazado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Didn&apos;t Meet Pre-Screening Eligibility</masterLabel>
+            <translation>No cumplió con la elegibilidad de la preselección</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Didn&apos;t Show For Initial Visit</masterLabel>
+            <translation>No se presentó para la visita inicial</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Didn&apos;t Sign Consent</masterLabel>
+            <translation>No firmó el consentimiento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed Inclusion/Exclusion Criteria</masterLabel>
+            <translation>Criterios de inclusión/exclusión desaprobados</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Otro</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PI Decision</masterLabel>
+            <translation>Decisión del IP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Decision</masterLabel>
+            <translation>Decisión del paciente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient Declined</masterLabel>
+            <translation>Rechazo de parte del paciente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site No Longer Accepting Referrals</masterLabel>
+            <translation>El centro ya no acepta referidos</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Visit Out Of Window</masterLabel>
+            <translation>Visita fuera de la ventana</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date non-referral reason identified --></help>
+        <label><!-- Non-Referral Date --></label>
+        <name>Non_Referral_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Free form field to add in any additional comments concerning non-referral --></help>
+        <label><!-- Non-Referral Notes --></label>
+        <name>Non_Referral_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non- Referral Reason --></label>
+        <name>Non_Referral_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Failed Pre-Eligibility Screening</masterLabel>
+            <translation>Selección de preelegibilidad desaprobada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Had Discussion, Not Interested</masterLabel>
+            <translation>Se llevó a cabo la conversación, no está interesado/a</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Longer Interested</masterLabel>
+            <translation>Ya no está interesado/a</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date Potential Participant opted into being referred --></help>
+        <label><!-- Opt-In Referred Date --></label>
+        <name>Opt_In_Referred_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does the Potential Participant opt-in to allow being referred to the Principal Investigator associated with the Site selected earlier? --></help>
+        <label><!-- Opt-In Referred --></label>
+        <name>Opt_In_Referred__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date Potential Participant opted into the T&amp;Cs --></help>
+        <label><!-- Opt-In T&amp;C Date --></label>
+        <name>Opt_In_T_C_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does the Potential Participant opt-in to the Terms and Conditions of clinical trial? --></help>
+        <label><!-- Opt-In T&amp;C --></label>
+        <name>Opt_In_T_C__c</name>
+    </fields>
+    <fields>
+        <label><!-- PI Account --></label>
+        <name>PI_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- PI Contact --></label>
+        <name>PI_Contact__c</name>
+        <relationshipLabel><!-- Participant Enrollments (PI) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Participant Contact --></label>
+        <name>Participant_Contact__c</name>
+        <relationshipLabel><!-- Participant Enrollments (Participant Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Participant Enrollment ID --></label>
+        <name>Participant_Enrollment_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- HCP/Physician Participant ID randomized ID --></help>
+        <label><!-- Participant ID (randomized ID) --></label>
+        <name>Participant_ID_randomized_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date when HCP/3rd Party identifies Potential Participant --></help>
+        <label><!-- Participant Identified Date --></label>
+        <name>Participant_Identified_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Participant Key --></label>
+        <name>Participant_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Participant Name --></label>
+        <name>Participant_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Participant Status Last Changed Date --></label>
+        <name>Participant_Status_Last_Changed_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- HCP/Physician Participant Participant Status --></help>
+        <label><!-- Participant Status --></label>
+        <name>Participant_Status__c</name>
+        <picklistValues>
+            <masterLabel>Contact Attempt In Progress</masterLabel>
+            <translation>Intento de contacto en curso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Failed</masterLabel>
+            <translation>No se logró el contacto</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Successful</masterLabel>
+            <translation>Contacto exitoso</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eligibility Failed</masterLabel>
+            <translation>Elegibilidad desaprobada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eligibility Passed</masterLabel>
+            <translation>Elegibilidad aprobada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrollment Failed</masterLabel>
+            <translation>Inscripción desaprobada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enrollment Success</masterLabel>
+            <translation>Inscripción exitosa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Excluded from Referring</masterLabel>
+            <translation>Excluido/a del referenciamiento</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed Referral</masterLabel>
+            <translation>Referenciamiento desaprobado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed Review</masterLabel>
+            <translation>Revisión desaprobada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Referral</masterLabel>
+            <translation>Referenciamiento pendiente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral Accepted</masterLabel>
+            <translation>Referenciamiento aceptado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral Declined</masterLabel>
+            <translation>Referenciamiento rechazado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral On Hold</masterLabel>
+            <translation>Referenciamiento en espera</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral Sent to PI</masterLabel>
+            <translation>Referenciamiento enviado al IP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Screening Complete</masterLabel>
+            <translation>Selección completa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Screening Failed</masterLabel>
+            <translation>Selección desaprobada</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Screening In Progress</masterLabel>
+            <translation>Selección en curso</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Participant Surname --></label>
+        <name>Participant_Surname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Participant --></label>
+        <name>Participant__c</name>
+        <relationshipLabel><!-- Participant Enrollments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Chart review trying to identify Potential Participant.  Documented per potential participant? --></help>
+        <label><!-- Pass Chart Review --></label>
+        <name>Pass_Chart_Review__c</name>
+    </fields>
+    <fields>
+        <label><!-- Patient ID --></label>
+        <name>Patient_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date the pre-eligibility screening questionnaire was completed --></help>
+        <label><!-- Pre-Eligibility Date --></label>
+        <name>Pre_Eligibility_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the Potential Participant pass the pre-eligibility screening questionnaire? --></help>
+        <label><!-- Pre-Eligibility --></label>
+        <name>Pre_Eligibility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-screening Status --></label>
+        <name>Pre_screening_Status__c</name>
+        <picklistValues>
+            <masterLabel>Fail</masterLabel>
+            <translation>Desaprobar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Required</masterLabel>
+            <translation>No se requiere</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pass</masterLabel>
+            <translation>Aprobar</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation>Pendiente</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- HCP/Physician Participant Randomized Date --></help>
+        <label><!-- Randomized (Date) --></label>
+        <name>Randomized_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Randomized --></label>
+        <name>Randomized__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral Completed by --></label>
+        <name>Referral_Completed_by__c</name>
+        <relationshipLabel><!-- Participant Enrollments (Pre-Screening  Completed by) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Referral Completed by --></help>
+        <label><!-- Referral Completed by --></label>
+        <name>Referral_Completedby_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Referral ID --></label>
+        <name>Referral_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- HCP/Physician Participant Referral Source --></help>
+        <label><!-- Referral Source --></label>
+        <name>Referral_Source__c</name>
+        <picklistValues>
+            <masterLabel>3rd Party</masterLabel>
+            <translation>Tercero</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ACOE</masterLabel>
+            <translation>ACOE (centro de excelencia de análisis)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autocruitment</masterLabel>
+            <translation><!-- Autocruitment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCP</masterLabel>
+            <translation>PS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HCP Prescreen Log</masterLabel>
+            <translation>Cuaderno de preselección de PS</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PI</masterLabel>
+            <translation>IP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Patient</masterLabel>
+            <translation>Paciente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ePR</masterLabel>
+            <translation>ePR (registro electrónico del paciente)</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date Potential Participant referred to a Site / PI --></help>
+        <label><!-- Referred Date --></label>
+        <name>Referred_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Has the Potential Participant been successfully referred to a Site / PI? --></help>
+        <label><!-- Referred --></label>
+        <name>Referred__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date screening was completed --></help>
+        <label><!-- Screening Date --></label>
+        <name>Screening_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Screening ID --></label>
+        <name>Screening_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the Potential Participant pass screening? --></help>
+        <label><!-- Screening --></label>
+        <name>Screening__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date and time the site was selected --></help>
+        <label><!-- Site Date --></label>
+        <name>Site_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site --></label>
+        <name>Site__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Category --></label>
+        <name>Status_Category__c</name>
+    </fields>
+    <fields>
+        <label><!-- Study Hub Log --></label>
+        <name>Study_Hub_Log__c</name>
+        <relationshipLabel><!-- Study_Hub Integration Enrollments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Study Name --></label>
+        <name>Study_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Study Site --></label>
+        <name>Study_Site__c</name>
+        <relationshipLabel><!-- Participant Enrollments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Study --></label>
+        <name>Study__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terms and Conditions Accepted Date --></label>
+        <name>Terms_and_Conditions_Accepted_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Did the Potential Participant show up to the scheduled visit? --></help>
+        <label><!-- Visit Completed --></label>
+        <name>Visit_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- gclid --></label>
+        <name>gclid__c</name>
+    </fields>
+    <fields>
+        <label><!-- utm-campaign --></label>
+        <name>utm_campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- utm-content --></label>
+        <name>utm_content__c</name>
+    </fields>
+    <fields>
+        <label><!-- utm-medium --></label>
+        <name>utm_medium__c</name>
+    </fields>
+    <fields>
+        <label><!-- utm-source --></label>
+        <name>utm_source__c</name>
+    </fields>
+    <fields>
+        <label><!-- utm-term --></label>
+        <name>utm_term__c</name>
+    </fields>
+    <fields>
+        <label><!-- utmz --></label>
+        <name>utmz__c</name>
+    </fields>
+    <gender><!-- Feminine --></gender>
+    <nameFieldLabel><!-- Participant Profile Name --></nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- HCP is currently On Hold --></errorMessage>
+        <name>HCP_On_Hold</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Study is On Hold --></errorMessage>
+        <name>Study_On_Hold</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Study Site is On Hold, please select an active Study Site --></errorMessage>
+        <name>Study_Site_On_Hold</name>
+    </validationRules>
+</CustomObjectTranslation>

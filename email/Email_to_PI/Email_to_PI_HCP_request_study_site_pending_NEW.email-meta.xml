@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>PI receives reminder email that they have referrals waiting for them after 5 days of not taking action to accept/ decline/hold referral</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Email to PI- HCP request study site pending NEW</name>
+    <style>none</style>
+    <subject>Reminder to accept a referring provider</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

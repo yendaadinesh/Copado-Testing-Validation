@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>Davie Test Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>Amount</fieldNames>
+        <fieldNames>NextStep</fieldNames>
+        <fieldNames>Probability</fieldNames>
+        <info>&lt;p&gt;In order to get past the &amp;quot;Needs Analysis&amp;quot; stage, probability needs to exceed 50%.&lt;/p&gt;</info>
+        <picklistValueName>Needs Analysis</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>AccountId</fieldNames>
+        <fieldNames>NextStep</fieldNames>
+        <fieldNames>Probability</fieldNames>
+        <info>&lt;p&gt;In order to get past the qualified step, you need to update the probability percentage. &lt;/p&gt;</info>
+        <picklistValueName>Qualification</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Default_Opportunity_Record_Type</recordTypeName>
+</PathAssistant>

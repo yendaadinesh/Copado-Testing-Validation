@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email to patient the they have been declined to Trial</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Email to Patient: Clinical study referral Declined BLANK HCP</name>
+    <style>none</style>
+    <subject>Clinical research study referral update</subject>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_83069071</developerName>
+        <masterLabel>Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Study_Site__c.Participant_Profile__r$Participant_Status__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Referral Sent to PI</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pending Referral</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Contact Attempt In Progress</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Referral On Hold</sourceValue>
+            </sourceValues>
+            <value>Referred</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Referral Accepted</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Enrollment Success</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Contact Successful</sourceValue>
+            </sourceValues>
+            <value>Accepted</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Study_Site__c.Participant_Profile__r$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Study_Site__c$Clinical_Trial_Profile__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>S-15610</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Study_Site__c.Participant_Profile__r$Referral_Source__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>ePR</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Matrix</format>
+    <groupingsAcross>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_83069071</field>
+        <sortOrder>Desc</sortOrder>
+    </groupingsAcross>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Study_Site__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Participant Status per Study Site Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Study_Sites_with_Participants__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Study_Site__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

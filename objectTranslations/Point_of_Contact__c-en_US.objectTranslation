@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Point of Contact</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Points of Contact</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contact Name --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Point of Contact for --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Point of Contact Email --></label>
+        <name>Point_of_Contact_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Point of Contact Phone --></label>
+        <name>Point_of_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Point of Contact Type Description --></label>
+        <name>Point_of_Contact_Type_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Point of Contact Type --></label>
+        <name>Point_of_Contact_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Point of Contact for Account --></label>
+        <name>Point_of_Contact_for_Account__c</name>
+        <relationshipLabel><!-- Points of Contact --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Point of Contact for --></label>
+        <name>Point_of_Contact_for__c</name>
+        <relationshipLabel><!-- Points of Contact --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

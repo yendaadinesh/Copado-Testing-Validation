@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- First Logon --></label>
+        <name>First_Logon__c</name>
+    </fields>
+    <fields>
+        <label><!-- MDM Available Countries --></label>
+        <name>QIDC__MDM_Available_Countries_ims__c</name>
+        <picklistValues>
+            <masterLabel>AT</masterLabel>
+            <translation>AUSTRIA</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MDM Preferred Country --></label>
+        <name>QIDC__MDM_Preferred_Country_ims__c</name>
+        <picklistValues>
+            <masterLabel>AT</masterLabel>
+            <translation>AUSTRIA</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- OneKey Available Countries --></label>
+        <name>QIDC__OK_Available_Countries_ims__c</name>
+        <picklistValues>
+            <masterLabel>FR</masterLabel>
+            <translation>FRANCE</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- OneKey Preferred Country --></label>
+        <name>QIDC__OK_Preferred_Country_ims__c</name>
+        <picklistValues>
+            <masterLabel>FR</masterLabel>
+            <translation>FRANCE</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- OOC Profile Downloads --></label>
+        <name>QIDC__OOC_Profile_Downloads__c</name>
+    </fields>
+    <fields>
+        <label><!-- Org Manager Id --></label>
+        <name>QIDC__OrgManagerId_IMS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Completion Date --></label>
+        <name>Survey_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Survey Result --></label>
+        <name>Survey_Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- API_URL --></label>
+        <name>copado__API_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- The visibility of the message asking users to rate &amp; feedback Copado on the AppExchange is controlled here. --></help>
+        <label><!-- Hide Copado feedback --></label>
+        <name>copado__Hide_Copado_feedback__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Copado Tips --></label>
+        <name>copado__Show_Copado_Tips__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Manager Panels --></label>
+        <name>copado__Work_Manager_Panels__c</name>
+    </fields>
+</CustomObjectTranslation>

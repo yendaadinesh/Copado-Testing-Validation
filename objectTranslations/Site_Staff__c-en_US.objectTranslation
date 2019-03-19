@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Site Staff</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Site Staff</value>
+    </caseValues>
+    <fields>
+        <label><!-- Clinical Trial Profile --></label>
+        <name>Clinical_Trial_Profile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delegate Level --></label>
+        <name>Delegate_Level__c</name>
+        <picklistValues>
+            <masterLabel>Level 1</masterLabel>
+            <translation><!-- Level 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 2</masterLabel>
+            <translation><!-- Level 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Level 3</masterLabel>
+            <translation><!-- Level 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Site Contact --></label>
+        <name>Site_Contact__c</name>
+        <relationshipLabel><!-- Staff&apos;s Study Sites --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Site --></label>
+        <name>Site__c</name>
+    </fields>
+    <fields>
+        <label><!-- Study Site --></label>
+        <name>Study_Site__c</name>
+        <relationshipLabel><!-- Site Staff --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

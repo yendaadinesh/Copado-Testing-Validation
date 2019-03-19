@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Status History</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Status History</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- HCP Enrollment --></label>
+        <name>HCP_Enrollment__c</name>
+        <relationshipLabel><!-- Status History --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- New Status --></label>
+        <name>NewStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Study Site --></label>
+        <name>StudySite__c</name>
+        <relationshipLabel><!-- Status History --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
